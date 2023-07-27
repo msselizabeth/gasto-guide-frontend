@@ -1,0 +1,53 @@
+{
+  "name": "gasto-guide-frontend",
+  "version": "1.0.0",
+  "description": "diploma project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack server",
+    "dev": "webpack --node-env=development",
+    "prod": "webpack --node-env=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msselizabeth/gasto-guide-frontend.git"
+  },
+  "author": "Elizabeth Sheremet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msselizabeth/gasto-guide-frontend/issues"
+  },
+  "homepage": "https://github.com/msselizabeth/gasto-guide-frontend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.63.4",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "browserslist": "^4.21.9",
+    "normalize.css": "^8.0.1",
+    "postcss-preset-env": "^8.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.13.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
