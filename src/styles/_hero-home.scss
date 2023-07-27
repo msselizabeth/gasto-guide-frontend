@@ -1,0 +1,86 @@
+.world-map-icon{
+    fill: var(--color-world-map);
+    stroke-width: 0.1px;
+    stroke: rgba(132, 109, 109, 0.80);
+    filter: drop-shadow(0px 10px 5px rgba(4, 50, 120, 0.25));
+
+    width: 100%;
+    height: 250px;
+
+    margin: 0 auto;
+
+}
+
+.hero__image {
+    width: 100%;
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+.hero__container {
+    position: relative;
+    height: 250px;
+    margin-top: 25px;
+    padding-top: 0;
+    background-image: url('images/map.png');
+    background-repeat: no-repeat;
+    background-size: 100% 230px;
+}
+.hero__title {
+    font-family: 'DaysOne';
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-home-title);
+   padding-top: 200px;
+}
+
+.hero__link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+    max-width: 50px;
+    font-size:8px;
+    font-weight: 500;
+    color: var(--color-hero-links);
+
+   
+}
+
+
+.hero__link--greenland{
+    top: 3.3%;
+    left: 29.5%;
+}
+.hero__link--na{
+    top: 22%;
+    left: 14%;
+}
+.hero__link--sa {
+    top: 50.2%;
+    left: 27.1%;
+}
+.hero__link--africa {
+    top: 40%;
+    left: 48%;
+}
+.hero__link--europe {
+    top: 20%;
+    left: 55%;
+}
+.hero__link--asia {
+    top: 23%;
+    left: 78%;
+}
+.hero__link--au {
+    top: 61%;
+    left: 78.5%;
+}
+
+@media screen and (min-width: 410px) {
+    .hero__link {
+        font-size: 10px;
+    }
+}

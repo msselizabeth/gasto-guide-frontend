@@ -1,6 +1,9 @@
 
 body {
     font-family: var(--font-family-primary);
+   
+    background-image: url('images/food-fon.png');
+    background-size: 375px 270px;
 }
 a {
     text-decoration: none;
@@ -16,9 +19,10 @@ ul{
     padding: 0;
     list-style: none;
 }
-h1.h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+img{ display: block;}
 
 
 

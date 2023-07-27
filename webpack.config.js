@@ -32,7 +32,7 @@ module.exports = {
             minify: devMode ? false : true,
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].scss'
+            filename: '[name].[contenthash].css'
         })
     ],
     module: {
@@ -42,7 +42,7 @@ module.exports = {
                 loader: "html-loader",
             },
             {
-                test: /\.woff$/i,
+                test: /\.woff|ttf$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: 'fonts/[name][ext]',
