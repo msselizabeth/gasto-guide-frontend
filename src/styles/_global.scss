@@ -1,7 +1,11 @@
 
 body {
     font-family: var(--font-family-primary);
+    color: var(--color-primary-text);
+    font-size: 16px;
+    font-weight: 500;
     background-image: url('images/food-fon.png');
+    background-color: var(--background-color-primary);
     background-size: 375px 290px;
 }
 a {
@@ -50,6 +54,7 @@ img{ display: block;}
 @media screen and (min-width: 768px) {
     body {
             background-size: 768px 520px;
+            font-size: 18px;
         }
     .section__title{
         font-size: 24px;
@@ -77,6 +82,9 @@ img{ display: block;}
 }
 
 @media screen and (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
     .section {
         width: 1200px;
     }
