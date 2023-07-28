@@ -1,0 +1,70 @@
+.current {
+    color: var(--color-hover-text);
+    padding-left: 21px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        background-image: url("images/icon-current.svg");
+    }
+
+    &:hover, &:focus {
+        color: var(--color-hover-current-link);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover::after, &:focus::after {
+        background-image: url("images/current-hover-icon.svg");
+        transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+@media screen and (min-width:1000px) {
+    .current {
+        padding-left: 21px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .current {
+        padding-left: 22px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 21px;
+            height: 21px;
+
+        }
+    }
+}
+@media screen and (min-width:1440px) {
+    .current {
+            padding-left: 26px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 0;
+                width: 25px;
+                height: 25px;
+
+            }
+        }
+}

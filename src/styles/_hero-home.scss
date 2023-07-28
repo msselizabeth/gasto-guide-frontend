@@ -1,38 +1,20 @@
-.world-map-icon{
-    fill: var(--color-world-map);
-    stroke-width: 0.1px;
-    stroke: rgba(132, 109, 109, 0.80);
-    filter: drop-shadow(0px 10px 5px rgba(4, 50, 120, 0.25));
-
-    width: 100%;
-    height: 250px;
-
-    margin: 0 auto;
-
-}
-
-.hero__image {
-    width: 100%;
-    margin: 0 auto;
-    max-height: 300px;
-}
 
 .hero__container {
     position: relative;
-    height: 250px;
+    height: 270px;
     margin-top: 25px;
     padding-top: 0;
-    background-image: url('images/map.png');
+    background-image: url('images/home-page/map-mob.png');
     background-repeat: no-repeat;
     background-size: 100% 230px;
 }
 .hero__title {
-    font-family: 'DaysOne';
+    font-family: var(--font-family-titles);
     font-size: 22px;
     text-align: center;
     text-transform: uppercase;
     color: var(--color-home-title);
-   padding-top: 200px;
+    padding-top: 200px;
 }
 
 .hero__link{
@@ -46,10 +28,11 @@
     font-weight: 500;
     color: var(--color-hero-links);
 
-   
+    &:hover, &:focus {
+        color: var(--color-hover-text);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    }
 }
-
-
 .hero__link--greenland{
     top: 3.3%;
     left: 29.5%;
@@ -59,11 +42,11 @@
     left: 14%;
 }
 .hero__link--sa {
-    top: 50.2%;
+    top: 48.5%;
     left: 27.1%;
 }
 .hero__link--africa {
-    top: 40%;
+    top: 38%;
     left: 48%;
 }
 .hero__link--europe {
@@ -71,16 +54,204 @@
     left: 55%;
 }
 .hero__link--asia {
-    top: 23%;
+    top: 22%;
     left: 78%;
 }
 .hero__link--au {
-    top: 61%;
+    top:58%;
     left: 78.5%;
 }
 
 @media screen and (min-width: 410px) {
     .hero__link {
         font-size: 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+ 
+    .hero__container {
+        height: 400px;
+        background-image: url('images/home-page/world-map-tablet.png');
+        background-size: 100% 390px;
+    }
+    .hero__title{
+        font-size: 38px;
+        padding-top: 330px;
+    }
+    .hero__link{
+        font-size: 16px;
+        max-width: 70px;
+
+        &--greenland{
+            top: 3.4%;
+            left: 30%;
+        }
+        &--na{
+            top: 24%;
+            left: 14%;
+        }
+        &--sa{
+            top: 58%;
+            left: 27.7%;
+        }
+        &--africa{
+            top: 45%;
+            left: 48%;
+        }
+        &--europe{
+            top: 21.8%;
+            left: 55.5%;
+        }
+        &--asia{
+            top: 26%;
+            left: 77%;
+        }
+        &--au{
+            top: 69%;
+            left: 79.3%;
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    .hero__container {
+        height: 600px;
+        background-size: 100% 530px;
+    }
+
+    .hero__title {
+        font-size: 50px;
+        padding-top: 450px;
+    }
+
+    .hero__link {
+        font-size: 22px;
+        max-width: 90px;
+
+        &--greenland {
+            top: 3%;
+        }
+
+        &--na {
+            top: 23%;
+        }
+
+        &--sa {
+            top: 53%;
+            left: 27.2%;
+        }
+
+        &--africa {
+            top: 42%;
+        }
+
+        &--europe {
+            top: 21%;
+            left: 55%;
+        }
+
+        &--asia {
+            top: 24%;
+        }
+
+        &--au {
+            top: 63%;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .hero__container {
+        height: 700px;
+        background-image: url('images/home-page/world-map-desktop.png');
+        background-size: 100% 600px;
+    }
+
+    .hero__title {
+        font-size: 55px;
+        padding-top: 510px;
+    }
+
+    .hero__link {
+        font-size: 24px;
+        max-width: 100px;
+
+        &--greenland {
+            top: 3%;
+            left: 30.5%;
+        }
+
+        &--na {
+            top: 22.5%;
+            left: 14.5%;
+        }
+
+        &--sa {
+            top: 51.8%;
+            left: 27.7%;
+        }
+
+        &--africa {
+            top: 40%;
+        }
+
+        &--europe {
+            top: 21%;
+            left: 54%;
+        }
+
+        &--au {
+            top: 62%;
+            left: 80%;
+        }
+
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .hero__container {
+        height: 760px;
+        background-size: 100% 680px;
+    }
+
+    .hero__title {
+        font-size: 72px;
+        padding-top: 570px;
+    }
+
+    .hero__link {
+        font-size: 26px;
+        max-width: 110px;
+
+        &--greenland {
+            top: 3%;
+            left: 31%;
+        }
+        &--na {
+            top: 20.5%;
+        }
+        &--sa {
+            top: 46.5%;
+            left: 28%;
+        }
+        &--africa {
+            top: 36%;
+        }
+        &--europe {
+            top: 19%;
+        }
+        &--asia{
+            top: 21.5%;
+            left: 78%;
+        }
+
+        &--au {
+            top: 55%;
+            left: 80%;
+        }
     }
 }
