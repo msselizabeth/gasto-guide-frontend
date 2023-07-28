@@ -1,0 +1,144 @@
+.contacts__list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+}
+.contacts__link--mail{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+
+    color: var(--color-text-footer-mail);
+}
+
+.contacts__link--mail-icon, .social-links__link--icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+.contacts-social__title, .contacts__title--mail {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.social-links__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.contacts-social__list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+@media screen and (min-width:768px) {
+    .contacts__list{
+        margin-top: 20px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .contacts-social__list{
+        justify-content: start;
+        gap: 25px;
+    }
+
+        .contacts-social__title,
+        .contacts__title--mail {
+            font-size: 18px;
+        }
+
+    .contacts__link--mail {
+        margin-top: 15px;
+         font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+    .contacts__list {
+        margin-top: 25px;
+        gap: 65px;
+    }
+
+    .contacts-social__list {
+        gap: 65px;
+    }
+
+    .contacts-social__title,
+    .contacts__title--mail {
+        font-size: 22px;
+    }
+
+    .contacts__link--mail {
+        font-size: 20px;
+    }
+
+    .contacts__link--mail-icon, .social-links__link--icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-links__list, .contacts__link--mail {
+        margin-top: 15px;
+    }
+
+    .social-links__list {
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .contacts__list {
+        margin-top: 25px;
+        gap: 95px;
+    }
+
+    .contacts-social__list {
+        gap: 95px;
+    }
+
+    .contacts-social__title,
+    .contacts__title--mail {
+        font-size: 24px;
+    }
+
+    .contacts__link--mail {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    .contacts__list {
+        margin-top: 35px;
+        gap: 155px;
+    }
+
+    .contacts-social__list {
+        gap: 155px;
+    }
+
+    .contacts-social__title,
+    .contacts__title--mail {
+        font-size: 28px;
+    }
+
+    .contacts__link--mail {
+        font-size: 24px;
+    }
+
+}

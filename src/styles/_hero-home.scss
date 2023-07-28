@@ -1,7 +1,9 @@
-
+.hero{
+    margin-top: 100px;
+}
 .hero__container {
     position: relative;
-    height: 270px;
+    height: 250px;
     margin-top: 25px;
     padding-top: 0;
     background-image: url('images/home-page/map-mob.png');
@@ -30,7 +32,7 @@
 
     &:hover, &:focus {
         color: var(--color-hover-text);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 .hero__link--greenland{
@@ -42,11 +44,11 @@
     left: 14%;
 }
 .hero__link--sa {
-    top: 48.5%;
+    top: 51.5%;
     left: 27.1%;
 }
 .hero__link--africa {
-    top: 38%;
+    top: 41%;
     left: 48%;
 }
 .hero__link--europe {
@@ -58,8 +60,8 @@
     left: 78%;
 }
 .hero__link--au {
-    top:58%;
-    left: 78.5%;
+    top:62%;
+    left: 78.2%;
 }
 
 @media screen and (min-width: 410px) {
@@ -69,9 +71,13 @@
 }
 
 @media screen and (min-width:768px) {
+
+    .hero {
+            margin-top: 120px;
+    }
  
     .hero__container {
-        height: 400px;
+        height: 415px;
         background-image: url('images/home-page/world-map-tablet.png');
         background-size: 100% 390px;
     }
@@ -92,11 +98,11 @@
             left: 14%;
         }
         &--sa{
-            top: 58%;
+            top: 56%;
             left: 27.7%;
         }
         &--africa{
-            top: 45%;
+            top: 43.2%;
             left: 48%;
         }
         &--europe{
@@ -108,7 +114,7 @@
             left: 77%;
         }
         &--au{
-            top: 69%;
+            top: 66%;
             left: 79.3%;
         }
     }
@@ -116,8 +122,12 @@
 
 @media screen and (min-width:1000px) {
 
+    .hero {
+            margin-top: 130px;
+        }
+
     .hero__container {
-        height: 600px;
+        height: 560px;
         background-size: 100% 530px;
     }
 
@@ -135,16 +145,16 @@
         }
 
         &--na {
-            top: 23%;
+            top: 24%;
         }
 
         &--sa {
-            top: 53%;
+            top: 56%;
             left: 27.2%;
         }
 
         &--africa {
-            top: 42%;
+            top: 44%;
         }
 
         &--europe {
@@ -157,15 +167,19 @@
         }
 
         &--au {
-            top: 63%;
+            top: 67%;
         }
     }
 }
 
 @media screen and (min-width:1200px) {
 
+    .hero {
+            margin-top: 143px;
+        }
+
     .hero__container {
-        height: 700px;
+        height: 630px;
         background-image: url('images/home-page/world-map-desktop.png');
         background-size: 100% 600px;
     }
@@ -185,26 +199,30 @@
         }
 
         &--na {
-            top: 22.5%;
+            top: 26.5%;
             left: 14.5%;
         }
 
         &--sa {
-            top: 51.8%;
+            top: 57.8%;
             left: 27.7%;
         }
 
         &--africa {
-            top: 40%;
+            top: 44.5%;
         }
 
         &--europe {
-            top: 21%;
+            top: 23%;
             left: 54%;
         }
 
+        &--asia{
+            top: 26%;
+        }
+
         &--au {
-            top: 62%;
+            top: 69%;
             left: 80%;
         }
 
@@ -213,8 +231,12 @@
 
 @media screen and (min-width:1440px) {
 
+    .hero {
+            margin-top: 165px;
+        }
+
     .hero__container {
-        height: 760px;
+        height: 730px;
         background-size: 100% 680px;
     }
 
@@ -232,25 +254,25 @@
             left: 31%;
         }
         &--na {
-            top: 24%;
+            top: 26%;
         }
         &--sa {
-            top: 54.5%;
+            top: 56.5%;
             left: 28%;
         }
         &--africa {
-            top: 42%;
+            top: 44%;
         }
         &--europe {
-            top: 21.5%;
+            top: 23.5%;
         }
         &--asia{
-            top: 23.5%;
+            top: 25.5%;
             left: 78.5%;
         }
 
         &--au {
-            top: 64%;
+            top: 67.5%;
             left: 80%;
         }
     }
