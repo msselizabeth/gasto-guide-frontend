@@ -14,8 +14,10 @@
 
 .footer__title {
     font-family: var(--font-family-primary);
+    font-size: 18px;
     font-weight: 900;
     text-align: center;
+    color: var(--color-primary-text);
 }
 
 .footer__nav--list{
@@ -25,11 +27,15 @@
     gap: 10px;
     align-items: center;
 
-    margin-top: 15px;
+    margin-top: 12px;
    
 }
 .footer__nav--link {
-    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 105px;
     color: var(--color-text-footer-mail);
     font-size: 14px;
     text-align: center;
@@ -40,20 +46,27 @@
             color: var(--color-hover-text);
     
         }
+
+        &-icon {
+            width: 15px;
+            height: 15px;
+
+            fill: currentColor;
+        }
 }
 
 .footer__contacts--link-icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .footer__contacts--list{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .footer__contacts--link{
@@ -65,32 +78,68 @@
 
 }
 
+.footer__contscts--style-box {
+    // width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+
 @media screen and (min-width:768px) {
     .footer__container {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
-           
-
             gap: 25px;
         }
+
     .footer__nav--container, .footer__contacts--container{
         width: 350px;
     }
+    
 }
+
+// @media screen and (min-width:1000px) {
+//     .footer__container {
+//             gap: 15px;
+//             justify-content: space-between;
+//         }
+
+//         .footer__contscts--style-box {
+//             flex-direction: row-reverse;
+//             justify-content: space-between;
+//             align-items: center;
+//             gap: 15px;
+    
+//         }
+//         .footer__nav--container,
+//         .footer__contacts--container {
+//             width: 310px;
+//         }
+// }
 
 @media screen and (min-width:1200px) {
     .footer__container {
-        gap: 35px;
+        gap: 15px;
+        justify-content: center;
     }
 
     .footer__nav--container , .footer__contacts--container{
-        width: 450px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .footer__contscts--style-box {
+        flex-direction: row-reverse;
+        align-items: center;
+         gap: 15px;
+
+      }
 
     .footer__nav--list{
         width: 350px;
@@ -100,11 +149,11 @@
 
 @media screen and (min-width:1440px) {
     .footer__container {
-        gap: 20px;
+        gap: 15px;
     }
 
     .footer__nav--container, .footer__contacts--container {
-        width: 650px;
+        width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;

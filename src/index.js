@@ -1,5 +1,5 @@
 import './index.html';
-import './about.html';
+import './continents.html';
 import './index.scss';
 
 

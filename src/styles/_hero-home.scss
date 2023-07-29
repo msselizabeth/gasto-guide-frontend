@@ -2,7 +2,6 @@
 .hero__container {
     position: relative;
     height: 250px;
-    margin-top: 25px;
     padding-top: 0;
     background-image: url('images/home-page/map-mob.png');
     background-repeat: no-repeat;
@@ -38,27 +37,27 @@
     left: 29.5%;
 }
 .hero__link--na{
-    top: 22%;
+    top: 24%;
     left: 14%;
 }
 .hero__link--sa {
-    top: 51.5%;
+    top: 54.3%;
     left: 27.1%;
 }
 .hero__link--africa {
-    top: 41%;
+    top: 42.5%;
     left: 48%;
 }
 .hero__link--europe {
-    top: 20%;
+    top: 21%;
     left: 55%;
 }
 .hero__link--asia {
-    top: 22%;
+    top: 23%;
     left: 78%;
 }
 .hero__link--au {
-    top:62%;
+    top:65.7%;
     left: 78.2%;
 }
 
@@ -69,11 +68,6 @@
 }
 
 @media screen and (min-width:768px) {
-
-    .hero {
-            margin-top: 120px;
-    }
- 
     .hero__container {
         height: 415px;
         background-image: url('images/home-page/world-map-tablet.png');
@@ -92,19 +86,19 @@
             left: 30%;
         }
         &--na{
-            top: 24%;
+            top: 25%;
             left: 14%;
         }
         &--sa{
-            top: 56%;
+            top: 58%;
             left: 27.7%;
         }
         &--africa{
-            top: 43.2%;
+            top: 44.2%;
             left: 48%;
         }
         &--europe{
-            top: 21.8%;
+            top: 22.1%;
             left: 55.5%;
         }
         &--asia{
@@ -112,15 +106,13 @@
             left: 77%;
         }
         &--au{
-            top: 66%;
+            top: 68.8%;
             left: 79.3%;
         }
     }
 }
 
 @media screen and (min-width:1000px) {
-
-
     .hero__container {
         height: 560px;
         background-size: 100% 530px;
@@ -140,29 +132,29 @@
         }
 
         &--na {
-            top: 24%;
+            top: 25.3%;
         }
 
         &--sa {
-            top: 56%;
+            top: 58.3%;
             left: 27.2%;
         }
 
         &--africa {
-            top: 44%;
+            top: 46%;
         }
 
         &--europe {
-            top: 21%;
+            top: 22%;
             left: 55%;
         }
 
         &--asia {
-            top: 24%;
+            top: 26%;
         }
 
         &--au {
-            top: 67%;
+            top: 69.5%;
         }
     }
 }
@@ -195,16 +187,16 @@
         }
 
         &--sa {
-            top: 57.8%;
+            top: 59.8%;
             left: 27.7%;
         }
 
         &--africa {
-            top: 44.5%;
+            top: 46.5%;
         }
 
         &--europe {
-            top: 23%;
+            top: 24%;
             left: 54%;
         }
 
@@ -213,7 +205,7 @@
         }
 
         &--au {
-            top: 69%;
+            top: 71.5%;
             left: 80%;
         }
 
@@ -244,11 +236,11 @@
             top: 26%;
         }
         &--sa {
-            top: 56.5%;
+            top: 58.5%;
             left: 28%;
         }
         &--africa {
-            top: 44%;
+            top: 45%;
         }
         &--europe {
             top: 23.5%;
@@ -259,7 +251,7 @@
         }
 
         &--au {
-            top: 67.5%;
+            top: 69.5%;
             left: 80%;
         }
     }

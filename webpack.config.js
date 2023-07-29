@@ -26,8 +26,26 @@ module.exports = {
             minify: devMode ? false : true,
         }),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'about.html'),
-            filename: 'about.html',
+            template: path.resolve(__dirname, 'src', 'continents.html'),
+            filename: 'continents.html',
+
+            minify: devMode ? false : true,
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'countries.html'),
+            filename: 'countries.html',
+
+            minify: devMode ? false : true,
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'manual.html'),
+            filename: 'manual.html',
+
+            minify: devMode ? false : true,
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'products.html'),
+            filename: 'products.html',
 
             minify: devMode ? false : true,
         }),
