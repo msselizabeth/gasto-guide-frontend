@@ -26,26 +26,62 @@ module.exports = {
             minify: devMode ? false : true,
         }),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'continents.html'),
-            filename: 'continents.html',
+            template: path.resolve(__dirname, 'src', 'pages', 'continents.html'),
+            filename: 'pages/continents.html',
 
             minify: devMode ? false : true,
         }),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'countries.html'),
-            filename: 'countries.html',
+            template: path.resolve(__dirname, 'src', 'pages','countries.html'),
+            filename: 'pages/countries.html',
 
             minify: devMode ? false : true,
         }),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'manual.html'),
-            filename: 'manual.html',
+            template: path.resolve(__dirname, 'src', 'pages','manual.html'),
+            filename: 'pages/manual.html',
 
             minify: devMode ? false : true,
         }),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'products.html'),
-            filename: 'products.html',
+            template: path.resolve(__dirname, 'src', 'pages', 'products.html'),
+            filename: 'pages/products.html',
+
+            minify: devMode ? false : true,
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'continents', 'africa.html'),
+            filename: 'pages/continents/africa.html',
+
+            minify: devMode ? false : true,
+        }),
+         new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'continents', 'asia.html'),
+            filename: 'pages/continents/asia.html',
+
+            minify: devMode ? false : true,
+         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'continents', 'north-america.html'),
+            filename: 'pages/continents/north-america.html',
+
+            minify: devMode ? false : true,
+          }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'continents', 'south-america.html'),
+            filename: 'pages/continents/south-america.html',
+
+            minify: devMode ? false : true,
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'continents', 'europe.html'),
+            filename: 'pages/continents/europe.html',
+
+            minify: devMode ? false : true,
+        }),
+         new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'continents', 'australia.html'),
+            filename: 'pages/continents/australia.html',
 
             minify: devMode ? false : true,
         }),

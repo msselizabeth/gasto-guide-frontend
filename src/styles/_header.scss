@@ -31,7 +31,7 @@
     width: 230px;
     color: var(--color-primary-titles);
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
 
     &-icon {
         width: 75px;
@@ -202,7 +202,7 @@
             gap: 15px;
     
             font-size: 20px;
-            font-weight: 800;
+            font-weight: 600;
     
             &--link {
                 color: var(--color-links-header);
@@ -231,9 +231,7 @@
     }
     .nav__list {
             gap: 20px;
-    
             font-size: 24px;
-            font-weight: 800;
    }
   .header__nav--link-logo {
       width: 320px;
@@ -255,7 +253,6 @@
         gap: 25px;
 
         font-size: 28px;
-        font-weight: 800;
     }
 
     .header__nav--link-logo {
