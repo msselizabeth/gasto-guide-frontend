@@ -20,11 +20,12 @@
  }
 
  .author__text--social-link{
-    font-family: var(--font-family-titles);
+    font-weight: 700;
     color: var(--color-primary-text);
 
     &:hover, &:focus {
         color: var(--color-hover-current-link);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
  }
 
@@ -70,12 +71,15 @@
         @media screen and (min-width:1440px) {
             .author__text {
                 font-size: 22px;
-                width: 770px;
+                width: 800px;
+
+                line-height: 1.13;
             }
     
             .author__image {
-                width: 585px;
-                height: 425px;
+                width: 570px;
+                height: 380px;
+                object-fit: cover;
             }
     
         }

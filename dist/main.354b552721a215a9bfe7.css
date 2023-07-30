@@ -1,0 +1,351 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+:root{--color-primary-text: #022964;--color-links-header: #004487;--color-home-title: #004A8F;--color-primary-titles: #043278;--color-titles-section: #004A8F;--color-hover-text: #FFF801;--color-hover-current-link: #F03C03;--color-icons-buttons-home: #57D2A1;--color-text-footer-mail: #115BA0;--color-icons: rgba(4, 50, 120, 1);--color-world-map: rgba(31, 208, 146, 0.80);--color-hero-links: #034ba9;--color-shadow: rgba(3, 33, 77, 0.25);--color-border-btn: #00A7F6;--color-background-btn: rgba(0, 167, 246, 0.85);--background-color-primary: rgba(245, 242, 142, 0.07);--background-color-header-footer: rgba(18, 110, 249, 0.45);--background-color-mob-menu: rgba(18, 111, 250, 0.25);--box-shadow-color-header-footer: rgba(6, 78, 187, 0.45);--font-family-primary: "Montserrat", sans-serif;--font-family-titles: "DaysOne", sans-serif}body{font-family:"Montserrat", sans-serif;font-family:var(--font-family-primary);color:#022964;color:var(--color-primary-text);font-size:16px;font-weight:400;line-height:1.22;background-image:url(assets/food-fon.png);background-color:rgba(245, 242, 142, 0.07);background-color:var(--background-color-primary);background-size:375px 290px}a{-webkit-text-decoration:none;text-decoration:none}button{border:0;background-color:rgba(0,0,0,0);padding:0;margin:0}ul{margin:0;padding:0;list-style:none}h1,h2,h3,h4,h5,h6,p{margin:0}img{display:block}.section__title{font-family:"DaysOne", sans-serif;font-family:var(--font-family-titles);font-size:18px;color:#004A8F;color:var(--color-titles-section)}.section{width:100%;margin:0 auto;padding:20px 0px}.container{padding:0px 10px;margin:0 auto}@media screen and (min-width: 480px){body{background-size:480px 370px}.section{width:480px}}@media screen and (min-width: 768px){body{background-size:768px 520px;font-size:17px}.section__title{font-size:24px}.section{width:768px;padding:30px 0px}.container{width:738px;padding:0px 15px}}@media screen and (min-width: 1000px){.section{width:1000px;padding:35px 0px}.section__title{font-size:26px}.container{width:960px;padding:0px 20px}}@media screen and (min-width: 1200px){body{font-size:20px}.section{width:1200px;padding:40px 0px}.container{width:1160px}}@media screen and (min-width: 1440px){body{font-size:22px}.section{width:1440px;padding:50px 0px}.section__title{font-size:30px}.container{width:1390px;padding:0px 25px}}@font-face{font-family:"DaysOne";src:url(fonts/DaysOne-Regular.woff)}@font-face{font-family:"Montserrat";src:url(fonts/Montserrat-Regular.ttf),url(fonts/Montserrat-Bold.ttf),url(fonts/Montserrat-SemiBold.ttf),url(fonts/Montserrat-Medium.ttf),url(fonts/Montserrat-ExtraBold.ttf),url(fonts/Montserrat-Black.ttf)}.header{background-color:#fff;width:100%;box-shadow:0px 10px 10px 0px rgba(6, 78, 187, 0.45);box-shadow:0px 10px 10px 0px var(--box-shadow-color-header-footer)}.nav__list{display:none}.bg__container{width:100%;padding:15px 0px;background-color:rgba(18, 110, 249, 0.45);background-color:var(--background-color-header-footer)}.header__nav{display:flex;justify-content:space-between;align-items:center}.header__nav--link-logo{display:flex;align-items:center;width:230px;color:#043278;color:var(--color-primary-titles);font-size:24px;font-weight:700}.header__nav--link-logo-icon{width:75px;height:50px}.header__nav--button-menu{width:55px;height:45px}.header__nav--button-menu-icon{width:55px;height:45px}.mobile-menu__container{display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:flex-start;max-width:768px;height:100%;padding-left:20px;padding-right:20px;background-color:rgba(18, 111, 250, 0.25);background-color:var(--background-color-mob-menu)}.mobile-menu__btn-close{width:40px;height:25px;margin-top:15px;color:rgba(4, 50, 120, 1);color:var(--color-icons)}.mobile-menu__btn-close:hover,.mobile-menu__btn-close:focus{color:#FFF801;color:var(--color-hover-text);transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)}.mobile-menu__btn-close--icon{width:45px;height:25px;fill:currentColor}.mobile-menu__nav--list{display:flex;flex-direction:column;gap:12px;margin-top:50px;font-size:22px;font-weight:600}.mobile-menu__nav--list-link{color:#004487;color:var(--color-links-header)}.mobile-menu__nav--list-link:hover,.mobile-menu__nav--list-link:focus{color:#FFF801;color:var(--color-hover-text)}.mobile-menu--contacts-title{margin-top:50px;margin-bottom:15px;color:#043278;color:var(--color-primary-titles)}.mobile-menu__contacts--list{display:flex;flex-direction:column;gap:10px;align-items:flex-start}.mobile-menu__contacts--icon{height:30px;width:30px}.mobile-menu__contacts--container{display:flex;justify-content:center;align-items:center;gap:15px}.mobile-menu__contacts--item-mail{display:flex;justify-content:center;align-items:center;gap:5px}.mobile-menu__contacts--link-mail{color:#115BA0;color:var(--color-text-footer-mail)}.mobile-menu__contacts--link-social{display:block;width:30px;height:30px;display:flex;justify-content:center;align-items:center}.mobile-menu__nav--list-item{position:relative}.mobile-menu{overflow-y:scroll;position:fixed;top:0;left:0;z-index:100;width:100%;height:100%;background-color:#fff;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)}.mobile-menu.is-open{opacity:1;visibility:visible;pointer-events:auto}@media screen and (min-width: 768px){.header__nav--link-logo{width:280px;font-size:32px}.header__nav--link-logo-icon{width:95px;height:60px}.header__nav--button-menu{width:80px;height:60px}.header__nav--button-menu-icon{width:80px;height:60px}}@media screen and (min-width: 1000px){.mobile-menu{display:none}.header__nav--button-menu{display:none}.header__nav{justify-content:start;gap:60px}.nav__list{display:flex;justify-content:center;align-items:center;gap:15px;font-size:20px;font-weight:600}.nav__list--link{color:#004487;color:var(--color-links-header);display:flex;justify-content:center;align-items:center}.nav__list--link:hover,.nav__list--link:focus{color:#FFF801;color:var(--color-hover-text);transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)}.nav__list--item{position:relative}}@media screen and (min-width: 1200px){.header__nav{gap:80px}.nav__list{gap:20px;font-size:24px}.header__nav--link-logo{width:320px;font-size:34px}.header__nav--link-logo-icon{width:105px;height:70px}}@media screen and (min-width: 1440px){.header__nav{gap:90px}.nav__list{gap:25px;font-size:28px}.header__nav--link-logo{width:360px;font-size:36px}.header__nav--link-logo-icon{width:135px;height:85px}}.hero__container{position:relative;height:250px;padding-top:0;background-image:url(assets/map-mob.png);background-repeat:no-repeat;background-size:100% 230px}.hero__title{font-family:"DaysOne", sans-serif;font-family:var(--font-family-titles);font-size:22px;text-align:center;text-transform:uppercase;color:#004A8F;color:var(--color-home-title);padding-top:200px}.hero__link{position:absolute;top:0;left:0;display:block;text-align:center;max-width:50px;font-size:8px;font-weight:500;color:#034ba9;color:var(--color-hero-links)}.hero__link:hover,.hero__link:focus{color:#FFF801;color:var(--color-hover-text);transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)}.hero__link--greenland{top:3.3%;left:29.5%}.hero__link--na{top:24%;left:14%}.hero__link--sa{top:54.3%;left:27.1%}.hero__link--africa{top:42.5%;left:48%}.hero__link--europe{top:21%;left:55%}.hero__link--asia{top:23%;left:78%}.hero__link--au{top:65.7%;left:78.2%}@media screen and (min-width: 410px){.hero__link{font-size:10px}}@media screen and (min-width: 768px){.hero__container{height:415px;background-image:url(assets/world-map-tablet.png);background-size:100% 390px}.hero__title{font-size:38px;padding-top:330px}.hero__link{font-size:16px;max-width:70px}.hero__link--greenland{top:3.4%;left:30%}.hero__link--na{top:25%;left:14%}.hero__link--sa{top:58%;left:27.7%}.hero__link--africa{top:44.2%;left:48%}.hero__link--europe{top:22.1%;left:55.5%}.hero__link--asia{top:26%;left:77%}.hero__link--au{top:68.8%;left:79.3%}}@media screen and (min-width: 1000px){.hero__container{height:560px;background-size:100% 530px}.hero__title{font-size:50px;padding-top:450px}.hero__link{font-size:22px;max-width:90px}.hero__link--greenland{top:3%}.hero__link--na{top:25.3%}.hero__link--sa{top:58.3%;left:27.2%}.hero__link--africa{top:46%}.hero__link--europe{top:22%;left:55%}.hero__link--asia{top:26%}.hero__link--au{top:69.5%}}@media screen and (min-width: 1200px){.hero__container{height:630px;background-image:url(assets/world-map-desktop.png);background-size:100% 600px}.hero__title{font-size:55px;padding-top:510px}.hero__link{font-size:24px;max-width:100px}.hero__link--greenland{top:3%;left:30.5%}.hero__link--na{top:26.5%;left:14.5%}.hero__link--sa{top:59.8%;left:27.7%}.hero__link--africa{top:46.5%}.hero__link--europe{top:24%;left:54%}.hero__link--asia{top:26%}.hero__link--au{top:71.5%;left:80%}}@media screen and (min-width: 1440px){.hero__container{height:730px;background-size:100% 680px}.hero__title{font-size:72px;padding-top:570px}.hero__link{font-size:26px;max-width:110px}.hero__link--greenland{top:3%;left:31%}.hero__link--na{top:26%}.hero__link--sa{top:58.5%;left:28%}.hero__link--africa{top:45%}.hero__link--europe{top:23.5%}.hero__link--asia{top:25.5%;left:78.5%}.hero__link--au{top:69.5%;left:80%}}.hero-continets{padding:0}.hero-continents__container{position:relative;padding:0;height:290px;background-image:url(assets/hero-continents-mobile.jpg);background-repeat:no-repeat;background-size:100% 290px}.hero-continents__title{text-transform:uppercase;text-align:center;display:flex;justify-content:center;align-items:center;padding-top:115px;width:100%;height:50px;color:#FFF801;color:var(--color-hover-text);background-color:rgba(1,24,60,.15);font-size:24px}@media screen and (min-width: 768px){.hero-continents__container{width:100%;height:410px;background-image:url(assets/hero-continents-tablet.jpg);background-size:100% 410px}.hero-continents__title{height:80px;font-size:42px;padding-top:165px}}@media screen and (min-width: 1000px){.hero-continents__container{height:520px;background-size:100% 520px}.hero-continents__title{height:85px;font-size:50px;padding-top:235px}}@media screen and (min-width: 1200px){.hero-continents__container{width:100%;height:650px;background-image:url(assets/hero-continents-desktop.jpg);background-size:100% 650px}.hero-continents__title{height:100px;font-size:70px;padding-top:305px}}@media screen and (min-width: 1440px){.hero-continents__container{width:100%;height:770px;background-image:url(assets/hero-continents-desktop.jpg);background-size:100% 770px}.hero-continents__title{height:130px;font-size:85px;padding-top:360px}}.about__list{display:flex;flex-direction:column;align-items:center;gap:15px;font-size:15px;color:#022964;color:var(--color-primary-text);margin-top:20px}.about__list--item{display:flex;justify-content:space-between;align-items:center;gap:10px}.about__list--icon{fill:#57D2A1;fill:var(--color-icons-buttons-home);stroke-width:.15px;stroke:rgba(132,109,109,.8);width:40px;height:40px}.about__list--text-bold{font-family:"DaysOne", sans-serif;font-family:var(--font-family-titles)}@media screen and (min-width: 410px){.about__list{font-size:16px}}@media screen and (min-width: 768px){.about__list{height:470px;font-size:16px;flex-direction:column;flex-wrap:wrap;gap:20px}.about__list--item{width:355px}.about__list--icon{width:45px;height:45px}}@media screen and (min-width: 1000px){.about__list{height:460px;font-size:18px;gap:20px}.about__list--item{width:460px}.about__list--icon{width:50px;height:50px}}@media screen and (min-width: 1200px){.about__list{font-size:20px;gap:25px;height:465px}.about__list--item{width:555px}.about__list--icon{width:55px;height:55px}}@media screen and (min-width: 1440px){.about__list{font-size:22px;gap:30px}.about__list--item{width:665px}.about__list--icon{width:60px;height:60px}}.kitchen__text{margin-top:15px}.continents__list{display:flex;flex-direction:column;gap:25px}.continents__link{display:flex;justify-content:center;align-items:center}.continents__link--icon{width:270px;height:270px;filter:drop-shadow(0px 5px 5px rgba(3, 33, 77, 0.25));filter:drop-shadow(0px 5px 5px var(--color-shadow))}.continents__item{display:flex;flex-direction:column;justify-content:space-around;align-items:center;height:600px;margin-top:15px}.continents__item--title{font-weight:700}.continent__list{list-style:inside url(assets/point.svg);display:flex;align-items:center;flex-direction:column;gap:5px}.continent__item{margin-left:15px;width:100%}.continent__link--button{display:flex;justify-content:center;align-items:center;width:240px;height:47px;text-align:center;color:#FFF801;color:var(--color-hover-text);border-radius:25px;border:1px solid #00A7F6;border:1px solid var(--color-border-btn);background:rgba(0, 167, 246, 0.85);background:var(--color-background-btn);box-shadow:2px 5px 5px 0px rgba(3, 33, 77, 0.25);box-shadow:2px 5px 5px 0px var(--color-shadow);font-family:"DaysOne", sans-serif;font-family:var(--font-family-titles);font-size:18px}@media screen and (min-width: 768px){.continents__list{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:flex-start}.continents__item{width:355px;height:620px;align-items:center}.continent__item{margin-left:0px}}@media screen and (min-width: 1000px){.continents__item{width:425px;height:600px}}@media screen and (min-width: 1200px){.continents__item{width:365px;height:720px}.continent__link--button{width:280px;height:55px;font-size:20px}}@media screen and (min-width: 1440px){.continents__item{width:425px;height:760px}}.author__list{margin-top:15px;display:flex;flex-direction:column;gap:10px}.author__text--paragraph{display:block;margin-top:10px}.author__image{display:block;width:100%;margin-top:10px;border-radius:25px;box-shadow:3px 6px 10px 0px rgba(3, 33, 77, 0.25);box-shadow:3px 6px 10px 0px var(--color-shadow)}.author__text--social-link{font-family:"DaysOne", sans-serif;font-family:var(--font-family-titles);color:#022964;color:var(--color-primary-text)}.author__text--social-link:hover,.author__text--social-link:focus{color:#F03C03;color:var(--color-hover-current-link)}@media screen and (min-width: 1000px){.author__text{font-size:16px;width:530px}.author__list{gap:20px}.authot__list-item{display:flex;justify-content:space-between;align-items:center}.authot__list-item:first-child{flex-direction:row-reverse}.author__image{width:420px;height:300px;margin:0}}@media screen and (min-width: 1200px){.author__text{font-size:18px;width:630px}.author__image{width:500px;height:350px;border-radius:50px}}@media screen and (min-width: 1440px){.author__text{font-size:22px;width:770px}.author__image{width:585px;height:425px}}.contacts__list{margin-top:15px;display:flex;flex-direction:column;gap:15px}.contacts__link--mail{display:flex;justify-content:center;gap:5px;align-items:center;text-align:center;font-size:16px;margin-top:5px;color:#115BA0;color:var(--color-text-footer-mail)}.contacts__link--mail-icon,.social-links__link--icon{width:30px;height:30px}.contacts-social__title,.contacts__title--mail{text-align:center;font-size:16px}.social-links__list{display:flex;justify-content:center;gap:10px;margin-top:10px}.contacts-social__list{display:flex;justify-content:space-between}@media screen and (min-width: 768px){.contacts__list{margin-top:20px;flex-direction:row-reverse;justify-content:center;gap:25px}.contacts-social__list{justify-content:start;gap:25px}.contacts-social__title,.contacts__title--mail{font-size:18px}.contacts__link--mail{margin-top:15px;font-size:16px}}@media screen and (min-width: 1000px){.contacts__list{margin-top:25px;gap:65px}.contacts-social__list{gap:65px}.contacts-social__title,.contacts__title--mail{font-size:22px}.contacts__link--mail{font-size:20px}.contacts__link--mail-icon,.social-links__link--icon{width:40px;height:40px}.social-links__list,.contacts__link--mail{margin-top:15px}.social-links__list{gap:15px}}@media screen and (min-width: 1200px){.contacts__list{margin-top:25px;gap:95px}.contacts-social__list{gap:95px}.contacts-social__title,.contacts__title--mail{font-size:24px}.contacts__link--mail{font-size:22px}}@media screen and (min-width: 1440px){.contacts__list{margin-top:35px;gap:155px}.contacts-social__list{gap:155px}.contacts-social__title,.contacts__title--mail{font-size:28px}.contacts__link--mail{font-size:24px}}.travel__list{margin-top:20px;display:flex;justify-content:center;flex-direction:column;gap:15px;align-items:center}.travel__title{text-align:center;font-size:20px;text-transform:uppercase}.travel__link{display:block;width:250px;padding:20px;border:1px solid #004487;border:1px solid var(--color-links-header);color:#004487;color:var(--color-links-header);border-radius:30px;text-align:center;font-weight:800;font-size:18px;box-shadow:2px 7px 7px 0px rgba(3, 33, 77, 0.25);box-shadow:2px 7px 7px 0px var(--color-shadow);background-color:#57D2A1;background-color:var(--color-icons-buttons-home)}.travel__link:hover,.travel__link:focus{background-color:#004487;background-color:var(--color-links-header);color:#57D2A1;color:var(--color-icons-buttons-home);transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)}@media screen and (min-width: 768px){.travel__list{flex-direction:row;gap:40px;margin-top:25px}}@media screen and (min-width: 1000px){.travel__list{gap:80px;margin-top:30px}.travel__link{font-size:22px;width:270px;padding:25px;border-radius:40px;border:2px solid #004487;border:2px solid var(--color-links-header)}.travel__title{font-size:24px}}@media screen and (min-width: 1200px){.travel__list{gap:100px;margin-top:40px}.travel__link{font-size:24px;width:350px;padding:35px;border-radius:50px;border:2px solid #004487;border:2px solid var(--color-links-header)}.travel__title{font-size:30px}}@media screen and (min-width: 1440px){.travel__list{gap:140px;margin-top:45px}.travel__link{font-size:30px;width:390px;padding:45px;border-radius:60px;border:2px solid #004487;border:2px solid var(--color-links-header)}.travel__title{font-size:40px}}.footer{background-color:#fff;width:100%;box-shadow:4px 0px 35px 0px rgba(6, 78, 187, 0.45);box-shadow:4px 0px 35px 0px var(--box-shadow-color-header-footer)}.footer__container{display:flex;flex-direction:column;align-items:center;gap:25px}.footer__title{font-family:"Montserrat", sans-serif;font-family:var(--font-family-primary);font-size:18px;font-weight:700;text-align:center;color:#022964;color:var(--color-primary-text)}.footer__nav--list{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}.footer__nav--link{display:flex;justify-content:center;align-items:center;gap:3px;width:105px;color:#115BA0;color:var(--color-text-footer-mail);font-size:14px;text-align:center;transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)}.footer__nav--link:hover,.footer__nav--link:focus{color:#FFF801;color:var(--color-hover-text)}.footer__nav--link-icon{width:15px;height:15px;fill:currentColor}.footer__contacts--link-icon{width:25px;height:25px}.footer__contacts--list{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px}.footer__contacts--link{display:flex;justify-content:center;align-items:center;gap:5px;color:#115BA0;color:var(--color-text-footer-mail)}.footer__contscts--style-box{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:25px}@media screen and (min-width: 768px){.footer__container{flex-direction:row;flex-wrap:wrap;justify-content:space-evenly;gap:25px}.footer__nav--container,.footer__contacts--container{width:350px}}@media screen and (min-width: 1200px){.footer__container{gap:15px;justify-content:center}.footer__nav--container,.footer__contacts--container{width:400px;display:flex;flex-direction:column;justify-content:center;align-items:center}.footer__contscts--style-box{flex-direction:row-reverse;align-items:center;gap:15px}.footer__nav--list{width:350px;margin-top:10px}}@media screen and (min-width: 1440px){.footer__container{gap:15px}.footer__nav--container,.footer__contacts--container{width:500px;display:flex;flex-direction:column;justify-content:center;align-items:center}.footer__nav--list{width:350px;margin-top:10px}}.current{color:#FFF801;color:var(--color-hover-text);padding-left:21px}.current::after{content:"";position:absolute;top:2px;left:0;width:20px;height:20px;background-size:cover;background-image:url(assets/icon-current.svg)}.current:hover,.current:focus{color:#F03C03;color:var(--color-hover-current-link);transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)}.current:hover::after,.current:focus::after{background-image:url(assets/current-hover-icon.svg);transition:background-image 250ms cubic-bezier(0.4, 0, 0.2, 1)}@media screen and (min-width: 1000px){.current{padding-left:21px}.current::after{content:"";position:absolute;top:1px;left:0;width:20px;height:20px}}@media screen and (min-width: 1200px){.current{padding-left:22px}.current::after{content:"";position:absolute;top:3px;left:0;width:21px;height:21px}}@media screen and (min-width: 1440px){.current{padding-left:26px}.current::after{content:"";position:absolute;top:3px;left:0;width:25px;height:25px}}
