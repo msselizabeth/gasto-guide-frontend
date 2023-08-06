@@ -1,10 +1,8 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import {App} from '../components/App.jsx';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import CountriesOfSouthAmerica from '../components/southAmerica/CountriesOfSouthAmerica.jsx';
 
-// // ReactDOM.render(<App />, document.getElementById('root'));
-
-// const root = ReactDOM.createRoot(
-//   document.getElementById('root')
-// );
-// root.render(<App/>)
+const southAmericaCountries = ReactDOM.createRoot(
+  document.getElementById('south-america-countries')
+);
+southAmericaCountries.render(<CountriesOfSouthAmerica/>)

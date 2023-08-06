@@ -1,0 +1,46 @@
+
+.countriesSAlist {
+    display: flex;
+    gap: 45px;
+}
+
+
+
+.countriesSAlink {
+    position: relative;
+    display: block;
+
+
+   
+}
+
+.countriesSAimage {
+    width: 433px;
+    height: 315px;
+    object-fit: cover;
+    border-radius: 35px;
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
+
+}
+
+.countriesSAname {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 72px;
+    width: 100%;
+    background-color: var(--color-bg-countries);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    color: #FFF801;
+    font-family: var(--font-family-titles);
+    font-size: 33px;
+    text-transform: uppercase;
+
+
+}
