@@ -1,0 +1,122 @@
+.hero-country {
+    padding: 0;
+
+}
+
+.hero-country__container {
+    position: relative;
+    padding: 0;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: 100% 290px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-country__title{
+    color: var(--color-hover-text);
+    font-family: var(--font-family-titles);
+    text-align: center;
+}
+.hero-country__name{
+    text-transform: uppercase;
+    font-size: 33px;
+}
+.hero-country__capital {
+    font-size: 18px
+}
+
+.hero-country__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    list-style: inside;
+
+  
+}
+
+
+.title-features {
+    font-weight: 700;
+    list-style: none;
+}
+
+@media screen and (min-width:768px) {
+    .hero-country__container{
+        height: 410px;
+        background-size: 100% 410px;
+    }
+
+    .hero-country__name {
+            font-size: 44px;
+        }
+    
+    .hero-country__capital {
+            font-size: 24px
+        }
+    
+    .hero-country__list {
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .hero-country__container {
+        height: 520px;
+        background-size: 100% 520px;
+    }
+
+    .hero-country__name {
+        font-size: 49px;
+    }
+
+    .hero-country__capital {
+        font-size: 27px
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .hero-country__container {
+        height: 650px;
+        background-size: 100% 650px;
+    }
+
+    .hero-country__name {
+        font-size: 52px;
+    }
+
+    .hero-country__capital {
+        font-size: 30px
+    }
+
+    .hero-country__list {
+             gap: 20px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    .hero-country__container {
+        height: 770px;
+        background-size: 100% 770px;
+    }
+
+    .hero-country__name {
+        font-size: 66px;
+    }
+
+    .hero-country__capital {
+        font-size: 35px
+    }
+
+    .hero-country__list {
+        gap: 25px;
+    }
+
+}

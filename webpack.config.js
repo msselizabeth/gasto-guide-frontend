@@ -49,6 +49,18 @@ module.exports = {
 
             minify: devMode ? false : true,
         }),
+         new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages','country.html'),
+            filename: 'pages/country.html',
+
+            minify: devMode ? false : true,
+         }),
+         new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages','recipe.html'),
+            filename: 'pages/recipe.html',
+
+            minify: devMode ? false : true,
+        }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'pages', 'continents', 'africa.html'),
             filename: 'pages/continents/africa.html',

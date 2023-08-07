@@ -1,0 +1,112 @@
+.hero-country__dishes--list {
+display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-country__dishes--link{
+position: relative;
+    display: block;
+}
+
+.hero-country__dishes--img{
+    width: 100%;
+        height: 255px;
+        object-fit: cover;
+        border-radius: 25px;
+        box-shadow: 3px 3px 5px 0px var(--color-shadow);
+}
+
+.hero-country__dishes--name{
+    position: absolute;
+        bottom: 0;
+        left: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        height: 55px;
+        width: 100%;
+        background-color: var(--color-bg-countries);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: #FFF801;
+        font-family: var(--font-family-titles);
+        font-size: 21px;
+        text-transform: uppercase;
+}
+
+@media screen and (min-width:768px) {
+    .hero-country__dishes--list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+     .hero-country__dishes--img {
+        width: 355px;
+        height: 245px;
+        border-radius: 30px; 
+    }
+
+    .hero-country__dishes--name{
+        height: 65px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        font-size: 24px;
+    }
+
+
+}
+
+@media screen and (min-width:1000px) {
+    .hero-country__dishes--list {
+        gap: 30px;
+    }
+
+    .hero-country__dishes--img {
+        width: 300px;
+        height: 205px;
+    }
+
+    .hero-country__dishes--name {
+        font-size: 26px;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .hero-country__dishes--list {
+        gap: 35px;
+    }
+
+    .hero-country__dishes--img {
+        width: 363px;
+        height: 245px;
+    }
+
+    .hero-country__dishes--name {
+        font-size: 28px;
+    }
+
+
+}
+
+@media screen and (min-width:1440px) {
+    .hero-country__dishes--list {
+        gap: 45px;
+    }
+
+    .hero-country__dishes--img {
+        width: 433px;
+        height: 285px;
+    }
+
+    .hero-country__dishes--name {
+        height: 75px;
+        font-size: 31px;
+    }
+
+
+}
