@@ -1,0 +1,235 @@
+.hero-dish{
+    padding: 0;
+}
+
+.hero-dish__container{
+    position: relative;
+        padding: 0;
+        height: 290px;
+        background-repeat: no-repeat;
+        background-size: 100% 290px;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+}
+
+.hero-dish__title{
+    color: var(--color-hover-text);
+        font-family: var(--font-family-titles);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 33px;
+}
+
+.features-dish__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: inside;
+
+}
+
+.recipe__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 7px;
+    font-family: var(--font-family-titles);
+    color: var(--color-recipe-titles);
+}
+
+.recipe__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe__image {
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.technology__container, .nutritional__container , .recipe__container{
+    padding: 15px 10px;
+    border-radius: 25px;
+    margin-top: 15px;
+        background: var(--color-shadow-recipe);
+        box-shadow: 0px 4px 4px 0px var(--color-shadow);
+        backdrop-filter: blur(2.2px);
+}
+.recipe__container{
+    padding: 0;
+}
+.technology__title{
+    color: var(--color-recipe-titles);
+    font-size: 15px;
+    font-family: var(--font-family-titles);
+}
+.technology__list, .nutritional__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.nutritional__title{
+    font-weight: 600;
+}
+.nutritional__text{
+    display: inline;
+    margin-left: 3px;
+}
+.kcal__title {
+    margin-top: 15px;
+}
+
+
+@media screen and (min-width:768px) {
+    .hero-dish__container{
+        height: 410px;
+        background-size: 100% 410px;
+    }
+    .hero-dish__title{
+        font-size: 44px;
+    }
+    .features-dish__list{
+        gap: 15px;
+    }
+    .recipe__container{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .recipe__list{
+        justify-content: center;
+    }
+
+    .recipe__image{
+        width: 390px;
+        height: 100%;
+    }
+
+    .recipe__item{
+        width: 320px;
+    }
+
+    .technology__list, .nutritional__list, .technology__title{
+            font-size: 16px;
+        }
+}
+
+@media screen and (min-width:1000px) {
+    .hero-dish__container {
+            height: 520px;
+            background-size: 100% 520px;
+        }
+    
+        .hero-dish__title {
+            font-size: 49px;
+        }
+    
+        .features-dish__list {
+            gap: 20px;
+        }
+    .recipe__container {
+        gap: 15px;
+    }
+
+    .recipe__image {
+        width: 550px;
+        height: 100%;
+    }
+
+    .recipe__item {
+        width: 380px;
+    }
+
+    .technology__container, .nutritional__container {
+        margin-top: 25px;
+    }
+
+    .technology__list,
+    .nutritional__list,
+    .technology__title {
+        font-size: 17px;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero-dish__container {
+            height: 650px;
+            background-size: 100% 650px;
+        }
+    
+        .hero-dish__title {
+            font-size: 52px;
+        }
+    
+    .recipe__container {
+        gap: 20px;
+    }
+
+    .recipe__image {
+        width: 670px;
+    }
+
+    .recipe__item {
+        width: 455px;
+    }
+
+    .technology__container,
+    .nutritional__container {
+        margin-top: 30px;
+    }
+
+    .technology__list,
+    .nutritional__list,
+    .technology__title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .hero-dish__container {
+            height: 770px;
+            background-size: 100% 770px;
+        }
+    
+        .hero-dish__title {
+            font-size: 66px;
+        }
+    
+        .features-dish__list {
+            gap: 25px;
+        }
+    .recipe__container {
+        gap: 25px;
+    }
+
+    .recipe__image {
+        width: 860px;
+    }
+
+    .recipe__item {
+        width: 485px;
+    }
+
+    .technology__container,
+    .nutritional__container {
+        margin-top: 40px;
+    }
+
+    .technology__list,
+    .nutritional__list,
+    .technology__title {
+        font-size: 22px;
+        gap: 20px;
+    }
+}

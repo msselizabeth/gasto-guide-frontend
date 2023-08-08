@@ -7,6 +7,7 @@ import './js/mobile-menu';
 // import './js/reactfiles';
 import './js/country-list';
 import './js/county-info';
+import './js/recipe';
 
 
 
