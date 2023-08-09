@@ -70,6 +70,9 @@
         
     }
 }
+.kitchen__text{
+    margin-bottom: 15px;
+}
 
 @media screen and (min-width:768px) {
     .continents__list{
@@ -95,6 +98,9 @@
         width: 425px;
         height: 600px;
     }
+        .kitchen__text {
+            margin-bottom: 20px;
+        }
 }
 
 @media screen and (min-width:1200px) {
@@ -114,4 +120,7 @@
         width: 425px;
         height:760px;
     }
+        .kitchen__text {
+            margin-bottom: 25px;
+        }
 }
