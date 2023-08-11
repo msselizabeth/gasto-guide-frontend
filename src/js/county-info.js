@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { getCountryInfo, getDishesOfCountry } from './fetch';
 
 const countryCode = new URLSearchParams(window.location.search).get('code');
 const countryName = document.querySelector('.hero-country__name');
@@ -8,27 +9,11 @@ const headTitle = document.querySelector('title');
 const featuresList = document.querySelector('.hero-country__list');
 const dishesList = document.querySelector('.hero-country__dishes--list');
 
-function handleErrors(error) {
-    console.error('Error:', error);
-}
-
-function decodeHtmlEntities(text) {
-  const parser = new DOMParser();
-  const decoded = parser.parseFromString(text, 'text/html').body.textContent;
-  return decoded;
-}
-
-async function getCountryInfo() {
-    try {
-        const response = await axios.get(`https://gastro-guide-backend.onrender.com/api/countries/${countryCode}`);
-        const country = response.data;
-        displayCountry(country);
-    } catch (error) {
-        handleErrors(error);
-    }
-}
+const country = await getCountryInfo(countryCode);
+const dishes = await getDishesOfCountry(countryCode);
 
 function displayCountry(country) {
+    
     headTitle.textContent = `${country.countryName}`;
     hero.style.backgroundImage = `linear-gradient(to right, rgba(0, 21, 52, 0.3), rgba(0, 21, 52, 0.3)), url(${country.image})`;
     countryName.textContent = country.countryName;
@@ -36,20 +21,10 @@ function displayCountry(country) {
 
     country.featuresCountry.forEach(item => {
         const paragraph = document.createElement('li');
-        paragraph.textContent = decodeHtmlEntities(item.text);
+        paragraph.textContent = item.text;
         featuresList.appendChild(paragraph);
         featuresList.firstChild.classList.add('title-features');
     });
-}
-
-async function getDishesOfCountry() {
-    try {
-        const response = await axios.get(`https://gastro-guide-backend.onrender.com/api/countries/${countryCode}/recipes`);
-        const dishes = response.data;
-        displayDishes(dishes);
-    } catch (error) {
-        handleErrors(error);
-    }
 }
 
 function displayDishes(dishes) {
@@ -82,15 +57,10 @@ function displayDishes(dishes) {
     dishesList.appendChild(fragment);
 }
 
-async function fetchData() {
-    try {
-        await Promise.all([getCountryInfo(), getDishesOfCountry()]);
-    } catch (error) {
-        handleErrors(error);
-    }
-}
+displayCountry(country);
+displayDishes(dishes);
 
-fetchData();
+console.log(country);
 
 
 

@@ -1,6 +1,6 @@
-import axios from 'axios';
+import { getDish } from "./fetch";
 
-const dishCode = new URLSearchParams(window.location.search).get('codeDish');
+export const dishCode = new URLSearchParams(window.location.search).get('codeDish');
 const dishName = document.querySelector('.hero-dish__title');
 const dishHero = document.querySelector('.hero-dish__container');
 const headTitle = document.querySelector('title');
@@ -10,19 +10,9 @@ const recipeList = document.querySelector('.recipe__list');
 const technologyList = document.querySelector('.technology__list');
 const nutritionalList = document.querySelector('.nutritional__list');
 
-function handleErrors(error) {
-    console.error('Error:', error);
-}
+const dish = await getDish(dishCode);
+displayDish(dish);
 
-async function getDish() {
-    try {
-        const response = await axios.get(`https://gastro-guide-backend.onrender.com/api/recipes/${dishCode}`);
-        const dish = response.data;
-        displayDish(dish);
-    } catch (error) {
-        handleErrors(error);
-    }
-}
 
 function createFeatureElement(text) {
     const item = document.createElement('li');
@@ -77,6 +67,7 @@ function displayDish(dish) {
     dishName.textContent = dish.recipeName;
     recipeImg.src = dish.recipeImgSection;
     recipeImg.alt = dish.recipeImgAlt;
+    
 
     const featuresDishFragment = document.createDocumentFragment();
     dish.featuresDish.forEach(item => {
@@ -107,7 +98,6 @@ function displayDish(dish) {
     nutritionalList.appendChild(nutritionalListFragment);
 }
 
-getDish();
 
 
 

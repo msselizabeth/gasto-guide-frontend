@@ -1,16 +1,7 @@
-import axios from 'axios';
+import  { getCountriesOfTheContinent } from './fetch';
 
-const countriesList = document.getElementById('south-america-countries');
-
-async function getCountries() {
-    try {
-        const response = await axios.get(`https://gastro-guide-backend.onrender.com/api/continents/64ce1a83c2560a88fcb26b4e/countries`);
-        const countries = response.data;
-        displayCountries(countries, countriesList);
-    } catch (error) {
-        console.error('Error fetching countries:', error);
-    }
-}
+const countriesUl = document.querySelector('.countriesSAlist');
+const countries = await getCountriesOfTheContinent();
 
 function createCountryElement(country) {
     const item = document.createElement('li');
@@ -46,7 +37,7 @@ function displayCountries(countries, targetElement) {
     targetElement.appendChild(fragment);
 }
 
-getCountries();
+displayCountries(countries, countriesUl);
 
 
 
