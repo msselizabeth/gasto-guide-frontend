@@ -9,7 +9,7 @@ function createCountryElement(country) {
 
     const link = document.createElement('a');
     link.classList.add('countriesSAlink');
-    link.href = `../country.html?code=${country._id}`;
+    link.href = `../country-page/index.html?code=${country._id}`;
 
     const img = document.createElement('img');
     img.classList.add('countriesSAimage');

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+    <link rel="icon" href="../../images/favicon.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Кухні світу - Південна Америка</title>
+</head>
+<body>
+      <!--Header-->
+    <header class="header">
+        <div class="bg__container">
+            <div class="container header__container">
+                <nav class="header__nav">
+                    <a class="header__nav--link-logo" href="../index/index.html">
+                        <span>Gastro</span>
+                        <svg class="header__nav--link-logo-icon">
+                            <use href="../../images/symbol-defs.svg#icon-logo"></use>
+                        </svg>
+                        <span>Guide</span>
+                    </a>
+    
+                    <ul class="nav__list">
+                        <li class="nav__list--item">
+                            <a href="../index.html" class="nav__list--link ">Головна</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="../continents/index.html" class="nav__list--link current">Континенти</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="../countries/index.html" class="nav__list--link">Країни</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="../products/index.html" class="nav__list--link ">Продукти</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="../manual/index.html" class="nav__list--link">Довідник</a>
+                        </li>
+                    </ul>
+                    <!--Open Mobile menu button-->
+                    <button class="header__nav--button-menu js-open-btn">
+                        <svg class="header__nav--button-menu-icon">
+                            <use href="../../images/symbol-defs.svg#icon-mobile-menu"></use>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
+        <!--Mobile menu-->
+        <div class="mobile-menu js-mobile-menu">
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__btn-close js-close-btn">
+                    <svg class="mobile-menu__btn-close--icon">
+                        <use href="../../images/symbol-defs.svg#icon-cancel"></use>
+                    </svg>
+                </button>
+    
+                <div>
+    
+                    <ul class="mobile-menu__nav--list">
+                        <li class="mobile-menu__nav--list-item"><a href="../index.html"
+                                class="mobile-menu__nav--list-link ">Головна</a></li>
+                        <li class="mobile-menu__nav--list-item"><a href="../continents/index.html"
+                                class="mobile-menu__nav--list-link ">Континенти</a></li>
+                        <li class="mobile-menu__nav--list-item"><a href="../countries/index.html"
+                                class="mobile-menu__nav--list-link">Країни</a></li>
+                        <li class="mobile-menu__nav--list-item"><a href="./index.html"
+                                class="mobile-menu__nav--list-link current">Продукти</a></li>
+                        <li class="mobile-menu__nav--list-item"><a href="../manual/index.html"
+                                class="mobile-menu__nav--list-link">Довідник</a></li>
+                    </ul>
+    
+                    <ul class="mobile-menu__nav--list">
+                        <li class="mobile-menu__nav--list-item"><a href="../index.html#recource"
+                                class="mobile-menu__nav--list-link js-link">Про ресурс</a></li>
+                        <li class="mobile-menu__nav--list-item"><a href="../index.html#author"
+                                class="mobile-menu__nav--list-link js-link">Про атвора</a></li>
+                        <li class="mobile-menu__nav--list-item"><a href="../index.html#contacts"
+                                class="mobile-menu__nav--list-link js-link">Контакти</a></li>
+                    </ul>
+    
+                    <h3 class="mobile-menu--contacts-title">Зворотній звʼязок</h3>
+                    <ul class="mobile-menu__contacts--list">
+                        <li class="mobile-menu__contacts--item-mail">
+                            <svg class="mobile-menu__contacts--icon">
+                                <use href="../../images/symbol-defs.svg#icon-mail"></use>
+                            </svg>
+                            <a class="mobile-menu__contacts--link-mail"
+                                href="mailto:gastroguide@ukr.net">gastroguide@ukr.net</a>
+                        </li>
+                        <div class="mobile-menu__contacts--container">
+                            <li class="mobile-menu__contacts--item">
+                                <a class="mobile-menu__contacts--link-social"
+                                    href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ==">
+                                    <svg class="mobile-menu__contacts--icon-social mobile-menu__contacts--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contacts--item">
+                                <a class="mobile-menu__contacts--link-social"
+                                    href="https://www.facebook.com/profile.php?id=100095173823392">
+                                    <svg class="mobile-menu__contacts--icon-social mobile-menu__contacts--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main content-->
+    <main>
+        <!--Hero continent section-->
+        <section class="section hero-sa">
+            <div class="container hero-sa__container">
+                <h1 class="section__title continent__title-right">Кухня та тардиції континенту
+                    <span class="continent__title-right--uppercase">Південна <br> Америка</span>
+                </h1>
+            </div>
+        </section>
+
+         <!--Features section-->
+        <section class="section features">
+        <div class="container features__container">
+            <h2 class="section__title">Особливості континента</h2>
+            
+            <p class="features__text">Південна Америка відома своїм різноманітним та унікальним харчуванням, причому деякі страви цього материка набирають великої популярності у світовій кулінарії. Пропоную вам ознайомитись з деякими особливостями та цікавими фактами про харчування у цьому континенті.</p>
+       
+            <ul class="features__locations--list">
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Кухня Перу вважається однією з найрізноманітніших у Південній Америці  та  однією з найкращих у світі. Кулінарна спадщина Перу має вишукану та різноманітну кухню, яка поєднує індіанські, іспанські та африканські впливи. Культура харчування перуанців відома своїми стравами, такими як севиче (сира морська їжа з лимонним соком та спеціями), ломо сольядо (смажена свинина з овочами та спеціями), кей (кулінарний сир з квіноа) та антикучо (гриль з маринованим м'ясом).</p>
+                    <img src="../../images/continents-page/ceviche-peru-mob.jpg" alt="Севиче - страва кухні Перу" class="features__location--image"></li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Аргентина славиться своїм асадо - традиційним барбекю з яловичиною, бараниною та свининою. Ця особлива м'ясна страва готується на відкритому вогні та є однією з головних частин аргентинської культури та сімейних зборів.  Також популярні емпанадас (пиріжки з начинкою), міланеза (паніроване м'ясо), мате (парагвайський чай) та дульсе-де-лече (кондитерський крем з молока). Їжа - це спосіб об'єднання родини та друзів, аргентинці цінують час за столом та гостинність. </p>
+                    <img src="../../images/continents-page/asado-argentina-mob.jpg" alt="Асадо - страва аргентинської кухні." class="features__location--image"></li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Бразилія відома своїм багатством екзотичних фруктів, таких як асаї, маракуйя, гуава та манго. Бразильська кухня включає такі популярні страви, як фейжоада (бобова юшка з м'ясом) і пао де квеєу (сирні кульки). У Бразилії є традиція ранкового сніданку під назвою "кафе-ком-ляйт". Це багатий сніданок, який зазвичай включає свіжі фрукти, хліб, печиво, торти та соки. А на прогулянці можна знайти акараже - це популярна вулична їжа в Бразилії, особливо в штаті Баїя. Це смажені кукурудзяні шарики з креветками, подаються з гострими соусами.</p>
+                    <img src="../../images/continents-page/breakfast-brazilia-mob.jpg" alt="Бразильський національний сніданок" class="features__location--image"></li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Чилі є найбільшим споживачем морепродуктів у Південній Америці. Лосось, вугор, мідії, гребінці устриці та креветки – це лише деякі з найпопулярніших видів морепродуктів, які зустрічаються в чилійській кухні. Чилі славиться своїм виробництвом високоякісного вина. Виноградники в Чилі виробляють різноманітні сорти вин, включаючи каберне совіньйон, мерло та шардоне. У Чилі, крім своїх вишуканих вин, популярна страва під назвою - пастель де чокло, що являє собою запечений листковий пиріг з м'ясом, яйцями, оливками і кукурудзяною начинкою.  </p>
+                    <img src="../../images/continents-page/seafood-chilie-mob.jpg" alt="Морепродукти, риба, креветки, омар, лобстер, восьминіг" class="features__location--image"></li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">У Венесуелі зустрічається арепа — популярна вулична страва, яка є плоским кукурудзяним хлібцем, обсмаженим і наповненим різними начинками, такими як м'ясо, сир або квасоля. Венесуела виробляє та споживає більше бананів, ніж будь-яка інша країна у Південній Америці. Банани часто використовуються у різних стравах, включаючи банановий хліб та десерти. "Пабеллон кріолло" - це традиційна національна страва Венесуели. Вона складається з бавовнистого рису, чорних квасолів, смаженої говядини або свинини та плантана.</p>
+                    <img src="../../images/continents-page/arepas-venesyela-mob.jpg" alt="Арепа- венесуельська страва. Кукурудзяний хлібець." class="features__location--image"></li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Амазонський дощовий ліс пропонує різноманітність екзотичних продуктів:  асаї, драконфрукт, гуава, маракуйя, гуанабана та мангостин. Ці фрукти мають унікальні смаки та поживні властивості, використовуються в багатьох стравах та напоях. Амазонський ліс - одне з головних місць, де вирощуються бразильські горіхи, є багатим джерелом здорових жирів та білків. Амазонка відома вирощуванням якісного какао, з цього регіону походить багато видів какао-бобів.  Амазонка відома своїми "суперфудами", такими як асаї, мака, чіа. Які мають високу поживну цінність і є джерелом вітамінів та антиоксидантів.</p>
+                    <img src="../../images/continents-page/exotic-fruits-amazonka-mob.jpg" alt="Екзотичні фрукти, дракон, драконфрукт, манго, папая, диня, грейпфрут" class="features__location--image"></li>
+            </ul>
+
+            <p class="features__text">Південна Америка багата різноманітністю продуктів завдяки своєму клімату та географічному розмаїттю. Тут можна знайти різні фрукти, овочі, морепродукти та м'ясо.</p>
+
+            <ul class="features__locations--list">
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Картопля була одним з основних харчових продуктів інків та інших давніх цивілізацій в Андах. Він був завезений до Європи після відкриття Америки та став однією з ключових культурних культур у всьому світі.</p>
+                </li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Чилі, або перець, походить з Південної Америки і має важливе значення в місцевих кухнях протягом багатьох століть. Різні сорти чилі використовуються для приготування соусів, спецій та додавання гостроти до страв.</p>
+                </li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Алкаган, або амарант, також є одним із старовинних культурних культур Південної Америки. Насіння амаранту містить багато білка і є основою для приготування різних страв та хлібобулочних виробів.</p>
+                </li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Кіновар, або амазонський отруйний охра, є традиційним барвником та харчовим продуктом у деяких регіонах Південної Америки. Вона додається до страв для надання красивого червоного кольору та легкого кислого смаку.</p>
+                </li>
+                <li class="features__locations--item">
+                    <p class="features__locations--text">Шоколад: Какао, з якого виготовляється шоколад, має свої витоки в Південній Америці. Історично майя та ацтеки використовували какао у своїй культурі та релігійних церемоніях. Шоколад продовжує бути важливим продуктом у цьому регіоні та експортується по всьому світу.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Countries of continent-->
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">Країни континента</h2>
+            <ul class="countriesSAlist" ></ul>   
+    
+        </div>
+    </section>
+
+        <!--Contacts-->
+    <section class="section contacts">
+        <div class="container contacts__container">
+            <h2 class="section__title">Контактна інформація</h2>
+            <ul class="contacts__list">
+                <li class="contacts__list--item">
+                    <ul class="contacts-social__list">
+                       <li class="contacts-social__item">
+                        <h3 class="contacts-social__title">Соціальні мережі</h3>
+                        <ul class="social-links__list">
+                            <li class="social-links__item">
+                                <a href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ==" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                       <li class="contacts-social__item">
+                        <h3 class="contacts-social__title">Соціальні мережі автора</h3>
+                        <ul class="social-links__list">
+                            <li class="social-links__item">
+                                <a href="https://instagram.com/liza_gotovit?igshid=NTc4MTIwNjQ2YQ==" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="https://www.facebook.com/elizabethsheremet" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="https://www.youtube.com/@user-oq6eh1kn3u" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+
+                <li class="contacts__list--item">
+                    <h3 class="contacts__title--mail">Зворотній звʼязок</h3>
+                    <a class="contacts__link--mail" href="mailto:gastroguide@ukr.net">
+                        <svg class="contacts__link--mail-icon">
+                            <use href="../../images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        gastroguide@ukr.net</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    </main>
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="bg__container">
+            <div class="container footer__container">
+                <div class="footer__nav--container">
+                    <h3 class="section__title footer__title">Навігація по сайту</h3>
+                    <ul class="footer__nav--list">
+                        <li class="footer__nav--item">
+                            <a href="../index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-home"></use>
+                                </svg>Головна</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../continents/index.html" class="footer__nav--link"><svg
+                                    class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-continents"></use>
+                                </svg>Континенти</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../countries/index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-country"></use>
+                                </svg>Країни</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="./index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-products"></use>
+                                </svg>Продукти</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../manual/index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-manual"></use>
+                                </svg>Довідник</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../index.html#contacts" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-contacts"></use>
+                                </svg>Контакти</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../index.html#recource" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-about"></use>
+                                </svg>Про ресурс</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../index.html#author" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-author"></use>
+                                </svg>Про автора</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__contscts--style-box">
+                    <div class="footer__contacts--container">
+                        <h3 class="section__title footer__title">Зворотній звʼязок</h3>
+                        <ul class="footer__contacts--list">
+                            <li><a href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ=="
+                                    class="footer__contacts--link"><svg class="footer__contacts--link-icon" target="_blank">
+                                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                                    </svg></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100095173823392"
+                                    class="footer__contacts--link"><svg class="footer__contacts--link-icon" target="_blank">
+                                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                                    </svg></a></li>
+                            <li><a href="mailto:gastroguide@ukr.net" class="footer__contacts--link" target="_blank"><svg
+                                        class="footer__contacts--link-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-mail"></use>
+                                    </svg>gastroguide@ukr.net</a></li>
+                        </ul>
+                    </div>
+    
+                    <a class="header__nav--link-logo footer__logo" href="../index.html">
+                        <span>Gastro</span>
+                        <svg class="header__nav--link-logo-icon">
+                            <use href="../../images/symbol-defs.svg#icon-logo"></use>
+                        </svg>
+                        <span>Guide</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
