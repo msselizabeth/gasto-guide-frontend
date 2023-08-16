@@ -1,11 +1,43 @@
-
 @font-face {
     font-family: 'DaysOne';
-    src: url('fonts/DaysOne-Regular.woff');
+    font-display: swap;
+    src: url('fonts/DaysOne-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Regular.ttf'), url('fonts/Montserrat-Bold.ttf'), url('fonts/Montserrat-SemiBold.ttf'), url('fonts/Montserrat-Medium.ttf'), url('fonts/Montserrat-ExtraBold.ttf'), url('fonts/Montserrat-Black.ttf');
+    font-family: 'MontserratRegular';
+    font-display: swap;
+    src: url('fonts/MontserratRegular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'MontserratMedium';
+    font-display: swap;
+    src: url('fonts/MontserratMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratSemiBold';
+    font-display: swap;
+    src: url('fonts/MontserratSemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratBold';
+    font-display: swap;
+    src: url('fonts/MontserratBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratExtraBold';
+    font-display: swap;
+    src: url('fonts/MontserratExtraBold.ttf') format('truetype');
+}
+
+
+// @font-face {
+//     font-family: 'DaysOne';
+//     src: url('fonts/DaysOne-Regular.woff') format("truetype");
+// }
+
+// @font-face {
+//     font-family: 'Montserrat';
+//     src: url('fonts/Montserrat-Regular.ttf'), url('fonts/Montserrat-Bold.ttf'), url('fonts/Montserrat-SemiBold.ttf'), url('fonts/Montserrat-Medium.ttf'), url('fonts/Montserrat-ExtraBold.ttf'), url('fonts/Montserrat-Black.ttf') format("truetype");
+// }
 

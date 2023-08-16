@@ -1,15 +1,15 @@
-.countriesSAlist {
+.countriesList {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.countriesSAlink {
+.countriesLink {
     position: relative;
     display: block;
 }
 
-.countriesSAimage {
+.countriesImage {
     width: 100%;
     height: 255px;
     object-fit: cover;
@@ -18,7 +18,7 @@
 
 }
 
-.countriesSAname {
+.countriesName {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -39,19 +39,19 @@
 }
 
 @media screen and (min-width:768px) {
-    .countriesSAlist {
+    .countriesList {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
     }
 
-    .countriesSAimage {
+    .countriesImage {
         width: 355px;
         height: 245px;
         border-radius: 30px;
     }
 
-    .countriesSAname {
+    .countriesName {
         height: 65px;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
@@ -61,49 +61,49 @@
 }
 
 @media screen and (min-width:1000px) {
-    .countriesSAlist {
+    .countriesList {
         gap: 30px;
     }
 
-    .countriesSAimage {
+    .countriesImage {
         width: 300px;
         height: 205px;
 
     }
 
-    .countriesSAname {
+    .countriesName {
         font-size: 26px;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .countriesSAlist {
+    .countriesList {
         gap: 35px;
     }
 
-    .countriesSAimage {
+    .countriesImage {
         width: 363px;
         height: 245px;
 
     }
 
-    .countriesSAname {
+    .countriesName {
         font-size: 28px;
     }
 }
 
 @media screen and (min-width:1440px) {
-    .countriesSAlist {
+    .countriesList {
         gap: 45px;
     }
 
-    .countriesSAimage {
+    .countriesImage {
         width: 433px;
         height: 285px;
 
     }
 
-    .countriesSAname {
+    .countriesName {
         height: 75px;
         font-size: 31px;
     }

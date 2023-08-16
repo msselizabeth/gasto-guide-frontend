@@ -6,6 +6,11 @@ display: flex;
 .hero-country__dishes--link{
 position: relative;
     display: block;
+    transform-origin: center;
+    transition: transform 0.2s ease-in-out;
+    &:hover, &:focus {
+            transform: scale(1.04);
+        }
 }
 
 .hero-country__dishes--img{
@@ -30,7 +35,7 @@ position: relative;
         background-color: var(--color-bg-countries);
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
-        color: #FFF801;
+        color: var(--color-hover-text);
         font-family: var(--font-family-titles);
         font-size: 21px;
         text-transform: uppercase;

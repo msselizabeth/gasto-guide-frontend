@@ -20,6 +20,7 @@
 
 
 .header__nav {
+    font-family: 'MontserratSemiBold', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +33,7 @@
     color: var(--color-primary-titles);
     font-size: 24px;
     font-weight: 700;
+    font-family: 'MontserratBold', sans-serif;
 
     &-icon {
         width: 75px;
@@ -87,7 +89,7 @@
     margin-top: 50px;
 
     font-size: 22px;
-    font-weight: 600;
+    font-family: 'MontserratSemiBold', sans-serif;
 }
 .mobile-menu__nav--list-link{
     color: var(--color-links-header);

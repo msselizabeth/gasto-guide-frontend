@@ -36,7 +36,7 @@ function DishPage () {
                 <title>{dish.recipeName}</title>
             </Helmet>
             <SectionHero>
-                <ContainerHero image={dish.recipeImgHero}>
+                <ContainerHero imageHero={dish.recipeImgHero}>
                     <h1 className="hero-dish__title">{dish.recipeName}</h1>
                 </ContainerHero>
             </SectionHero>
@@ -50,7 +50,7 @@ function DishPage () {
                 <Container>
                     <h2 className="section__title">Рецептура страви</h2>
                     <div className="recipe__container">
-                        <img src={dish.recipeImgSection} alt={dish.recipeImgAlt} className="recipe__image" />
+                        <img src={dish.recipeImgSmall} alt={dish.recipeImgAlt} className="recipe__image" />
                         <RecipeList dish={dish} />
                     </div>
             
@@ -62,7 +62,14 @@ function DishPage () {
                     <div className="nutritional__container">
                          <h3 className="technology__title">Харчова цінність</h3>
                          <NutritionalList dish={dish} />
-                    <h4 className="technology__title kcal__title">{`Калорійність на 1 порцію(~300г): ${calOfDish} ккал`}</h4>
+                        <h4 className="technology__title kcal__title">На порцію(~300г):</h4>
+                        <ul>
+                            <li><h5 className="technology__title kcal__title">{`Білки: ${calOfDish.totalProteins} г`}</h5></li>
+                            <li><h5 className="technology__title kcal__title">{`Жири: ${calOfDish.totalFats} г`}</h5></li>
+                            <li><h5 className="technology__title kcal__title">{`Вуглеводи: ${calOfDish.totalCarbohydrates} г`}</h5></li>
+                            <li><h5 className="technology__title kcal__title" >{`Енергетична цінність: ${calOfDish.totalCalories} ккал`}</h5></li>
+                        </ul>
+                        <p className="attention-paragraph">Важливо памʼятати! Усі розрахунки щодо вмісту білків, жирів, вуглеводів і калорійності продуктів відрізняються залежно від якості компонентів, процесу приготування та інших чинників. Таким чином, всі обчислення можуть бути максимально приближенними до реальних, але не можуть бути на 100% точними.</p>
                     </div>
                     
                 </Container>

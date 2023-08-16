@@ -13,6 +13,15 @@ export async function getCountriesOfTheContinent() {
     }
 }
 
+export async function getCountries(page, limit) {
+    try {
+        const response = await axios.get(`https://gastro-guide-backend.onrender.com/api/countries?page=${page}&limit=${limit}`);
+        return response.data;
+    } catch (error) {
+        handleErrors(error);
+    }
+}
+
 export async function getCountryInfo(countryCode) {
     try {
         const response = await axios.get(`https://gastro-guide-backend.onrender.com/api/countries/${countryCode}`);

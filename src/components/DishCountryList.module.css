@@ -1,0 +1,124 @@
+.dishesList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dishesLink {
+    position: relative;
+    display: block;
+    transform-origin: center;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.04);
+    }
+}
+
+.dishesImg {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
+}
+
+.dishesName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 55px;
+    width: 100%;
+    background-color: var(--color-bg-countries);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: var(--color-hover-text);
+    font-family: var(--font-family-titles);
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:768px) {
+    .dishesList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .dishesImg {
+        width: 355px;
+        height: 245px;
+        border-radius: 30px;
+    }
+
+    .dishesName {
+        height: 65px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        font-size: 24px;
+    }
+
+
+}
+
+@media screen and (min-width:1000px) {
+    .dishesList {
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .dishesImg {
+        width: 300px;
+        height: 205px;
+    }
+
+    .dishesName {
+        font-size: 26px;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .dishesList {
+        gap: 35px;
+        margin-top: 40px;
+    }
+
+    .dishesImg {
+        width: 363px;
+        height: 245px;
+    }
+
+    .dishesName {
+        font-size: 28px;
+    }
+
+
+}
+
+@media screen and (min-width:1440px) {
+    .dishesList {
+        gap: 45px;
+    }
+
+    .dishesImg {
+        width: 433px;
+        height: 285px;
+    }
+
+    .dishesName {
+        height: 75px;
+        font-size: 31px;
+    }
+
+
+}

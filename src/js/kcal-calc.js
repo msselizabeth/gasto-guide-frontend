@@ -8,24 +8,48 @@ export let calOfDish;
 async function calculateCalories(products, dishRecipe) {
     let totalCal = 0;
     let weightDish = 0;
+    let totalProteins = 0;
+    let totalFats = 0;
+    let totalCarbohydrates = 0;
 
     for (const ingredient of dishRecipe) {
         const validProduct = products.find(oneProduct => oneProduct.productName === ingredient.productName);
+        console.log(validProduct);
 
         if (validProduct) {
-            const ingredientCal = (validProduct.kcal * ingredient.quantity) / 100;
+            const ingredientCal = (parseFloat(validProduct.kcal) * ingredient.quantity) / 100;
             totalCal += ingredientCal;
+
+            const proteins = (parseFloat(validProduct.macronutrients[0].qnt) * ingredient.quantity) / 100;
+            totalProteins += proteins;
+
+            const fats = (parseFloat(validProduct.macronutrients[1].qnt) * ingredient.quantity) / 100;
+            totalFats += fats;
+
+            const carbohydrates = (parseFloat(validProduct.macronutrients[2].qnt) * ingredient.quantity) / 100;
+            totalCarbohydrates += carbohydrates;
         }
         weightDish += Number(ingredient.quantity);
     }
 
-    totalCal -= (totalCal * 0.3);
-    weightDish -= (weightDish * 0.3);
+    totalCal -= (totalCal * 0.2);
+    weightDish -= (weightDish * 0.2);
+    totalProteins *= 0.85;
+    totalFats -= (totalFats * 0.15);
     
     const portions = weightDish / 300;
     const totalCalPortion = totalCal / portions;
+    const totalProteinsPortion = totalProteins / portions;
+    const totalFatsPortion = totalFats / portions;
+    const totalCarbohydratesPortion = totalCarbohydrates / portions;
 
-    return totalCalPortion.toFixed(2);
+    
+    return {
+        totalCalories: totalCalPortion.toFixed(2),
+        totalProteins: totalProteinsPortion.toFixed(2),
+        totalFats: totalFatsPortion.toFixed(2),
+        totalCarbohydrates: totalCarbohydratesPortion.toFixed(2)
+    };
 }
 
 if (dish && dish.recipe) {

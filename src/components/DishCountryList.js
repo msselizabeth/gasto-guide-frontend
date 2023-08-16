@@ -1,22 +1,27 @@
-import React, { Children } from 'react';
+import React from 'react';
+import css from './DishCountryList.module.css';
 
 
 const DishCountryList = ({dishes}) => {
     return (
-        <ul className="hero-country__dishes--list">
+        <>
+        <h2 className='section__title'>Страви країни</h2>
+        <ul className={css.dishesList}>
                     {dishes.map(dish => (
-                    <li key={dish._id} className="hero-country__dishes--item">
-                        <a href={`../recipe-page/index.html?codeDish=${dish._id}`} className="hero-country__dishes--link">
+                    <li key={dish._id} className={css.dishesItem}>
+                            <a href={`../recipe-page/index.html?codeDish=${dish._id}`}
+                               className={css.dishesLink}>
                             <img
-                                src={dish.recipeImgSection}
+                                src={dish.recipeImgSmall}
                                 alt={dish.recipeImgAlt}
-                                className="hero-country__dishes--img"
+                                className={css.dishesImg}
                             />
-                            <span className="hero-country__dishes--name">{dish.recipeName}</span>
+                            <span className={css.dishesName}>{dish.recipeName}</span>
                         </a>
                     </li>
                 ))}
-        </ul>
+            </ul>
+        </>
     )
 }
 

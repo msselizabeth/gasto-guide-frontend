@@ -9,6 +9,8 @@ import ContainerHero from '../components/ContainerHero';
 import Container from '../components/Container';
 import FeaturesCountryList from '../components/FeaturesCountryList';
 import DishCountryList from '../components/DishCountryList';
+import HistoryCountry from '../components/HistoryCountry';
+import SeasonsProducts from '../components/SeasonsProducts';
 
 function CountryPage () {
     const [country, setCountry] = useState({});
@@ -30,30 +32,37 @@ function CountryPage () {
         return <NotFoundPage />;
     }
 
-    console.log(country.image);
-
     return (
         <>
              <Helmet>
                 <title>{country.countryName}</title>
             </Helmet>
             <SectionHero>
-                <ContainerHero image={country.image}>
+                <ContainerHero imageHero={country.imageHero}>
                     <h1 className="hero-country__name hero-country__title">{country.countryName}</h1>
                     <p className="hero-country__capital hero-country__title">Столиця: {country.capitalCountry}</p>
                 </ContainerHero>
             </SectionHero>
             <Section>
                 <Container>
-                    <h2 className='section__title'>Особливості каїни</h2>
-                    <h3 className='features-country__title'>{country.featuresCountryTitle}</h3>
-                    <FeaturesCountryList country={country}/>
+                        <FeaturesCountryList country={country} />
+                </Container>
+            </Section>
+
+            <Section>
+                <Container>
+                    <HistoryCountry country={country}/>
+                </Container>
+            </Section>
+
+             <Section>
+                <Container>
+                    <SeasonsProducts country={country}/>
                 </Container>
             </Section>
            
             <Section>
                 {<Container>
-                   <h2 className='section__title'>Страви країни</h2>
                    <DishCountryList dishes={dishes} />
                 </Container>}
             </Section>
