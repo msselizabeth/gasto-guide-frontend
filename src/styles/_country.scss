@@ -5,9 +5,10 @@
 .hero-country__container {
     position: relative;
     padding: 0;
-    height: 290px;
+    width: 100%;
+    height: auto;
     background-repeat: no-repeat;
-    background-size: 100% 290px;
+    background-size: 100% 100%;
 
     display: flex;
     flex-direction: column;
@@ -15,10 +16,7 @@
     justify-content: center;
     align-items: center;
 }
-// .country__title--container {
-//     // position: relative;
-    
-// }
+
 .country__section--title{
     position: relative;
     width: 100%;
@@ -40,17 +38,19 @@
     }
 }
 
-.hero-country__title{
-    color: var(--color-hover-text);
-    font-family: var(--font-family-titles);
-    text-align: center;
-}
 .hero-country__name{
     text-transform: uppercase;
     font-size: 33px;
+        padding-top: 110px;
+            padding-bottom: 110px;
+            color: var(--color-hover-text);
+            font-family: var(--font-family-titles);
+            text-align: center;
 }
 .hero-country__capital {
-    font-size: 18px
+    display: block;
+    font-size: 18px;
+    text-transform: none;
 }
 
 
@@ -58,13 +58,12 @@
 
 
 @media screen and (min-width:768px) {
-    .hero-country__container{
-        height: 410px;
-        background-size: 100% 410px;
-    }
+   
 
     .hero-country__name {
             font-size: 44px;
+            padding-top: 145px;
+            padding-bottom: 145px;
         }
     
     .hero-country__capital {
@@ -93,6 +92,8 @@
 
     .hero-country__name {
         font-size: 49px;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 
     .hero-country__capital {
@@ -118,6 +119,8 @@
     }
 
     .hero-country__name {
+        padding-top: 265px;
+            padding-bottom: 265px;
         font-size: 52px;
     }
 
@@ -148,6 +151,8 @@
     }
 
     .hero-country__name {
+        padding-top: 265px;
+            padding-bottom: 265px;
         font-size: 66px;
     }
 

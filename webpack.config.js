@@ -16,6 +16,7 @@ module.exports = {
            countries: path.resolve(__dirname, 'src', 'pages', 'countries', 'countries.js'),
            products: path.resolve(__dirname, 'src', 'pages', 'products', 'products.js'),
            southAmerica: path.resolve(__dirname, 'src', 'pages', 'south-america', 'southAmerica.js'),
+           northAmerica: path.resolve(__dirname, 'src', 'pages', 'north-america', 'northAmerica.js'),
            country: path.resolve(__dirname, 'src', 'pages', 'country-page', 'country.js'),
            recipe: path.resolve(__dirname, 'src', 'pages', 'recipe-page', 'recipe.js'),
     },
@@ -81,12 +82,12 @@ module.exports = {
 
         //     minify: devMode ? false : true,
         //  }),
-        // new HtmlWebpackPlugin({
-        //     template: path.resolve(__dirname, 'src', 'pages', 'continents', 'north-america.html'),
-        //     filename: 'pages/continents/north-america.html',
-
-        //     minify: devMode ? false : true,
-        //   }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'north-america', 'index.html'),
+            chunks:['northAmerica'],
+            filename: 'north-america/index.html',
+            minify: devMode ? false : true,
+          }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'pages', 'south-america', 'index.html'),
             chunks:['southAmerica'],

@@ -39,8 +39,11 @@ function CountryPage () {
             </Helmet>
             <SectionHero>
                 <ContainerHero imageHero={country.imageHero}>
-                    <h1 className="hero-country__name hero-country__title">{country.countryName}</h1>
-                    <p className="hero-country__capital hero-country__title">Столиця: {country.capitalCountry}</p>
+                    <h1 className="hero-country__name">
+                        {country.countryName}
+                        <span className="hero-country__capital">Столиця: {country.capitalCountry}</span>
+                    </h1>
+                    
                 </ContainerHero>
             </SectionHero>
             <Section>

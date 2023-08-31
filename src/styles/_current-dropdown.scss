@@ -1,0 +1,27 @@
+.current-dropdown {
+    color: var(--color-hover-text);
+    padding-left: 15px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+        background-size: cover;
+        background-image: url("images/icon-current.svg");
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--color-hover-current-link);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        background-image: url("images/current-hover-icon.svg");
+        transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

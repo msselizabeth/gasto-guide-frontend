@@ -1,11 +1,7 @@
 .header {
     background-color: #ffffff;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
     z-index: 100;
     width: 100%;
-    
     box-shadow: 0px 10px 10px 0px var(--box-shadow-color-header-footer);
 }
 .nav__list {
@@ -45,11 +41,57 @@
 .header__nav--button-menu {
     width: 55px;
     height: 45px;
-
+    color: #043278;
+    transition: color 0.3s ease-in-out;
     &-icon {
+        fill: currentColor;
         width: 55px;
-            height: 45px;
+        height: 45px;
     }
+   &:hover {
+     color: var(--color-hover-text);
+ }
+   
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    background-color: #ffffff;
+    min-width: 100%;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-content__link{
+    display: block;
+   color: var(--color-primary-titles);
+   transition: color 0.3s ease;
+
+   &:hover, &:focus {
+    color: var(--color-hover-text);
+   }
+}
+
+.dropdown-content__item{
+    position: relative;
+    padding: 10px 5px 5px 15px;
+    background-color: var(--background-color-header-footer);
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 //mobile menu 
@@ -192,6 +234,9 @@
     .mobile-menu {
         display: none;
     }
+    .dropdown-content{
+        font-size: 16px;
+    }
     .header__nav--button-menu{
         display: none;
     }
@@ -205,8 +250,8 @@
             align-items: center;
             gap: 15px;
     
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 18px;
+        
     
             &--link {
                 color: var(--color-links-header);
@@ -235,7 +280,7 @@
     }
     .nav__list {
             gap: 20px;
-            font-size: 24px;
+            font-size: 22px;
    }
   .header__nav--link-logo {
       width: 320px;
@@ -256,7 +301,7 @@
     .nav__list {
         gap: 25px;
 
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .header__nav--link-logo {

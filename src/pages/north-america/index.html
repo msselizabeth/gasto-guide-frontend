@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+    <link rel="icon" href="../../images/favicon.svg" type="image/svg">
+
+    <title>Північна Америка</title>
+    
+</head>
+<body>
+      <!--Header-->
+     <header class="header">
+    <div class="bg__container">
+        <div class="container header__container">
+        <nav class="header__nav">
+            <a class="header__nav--link-logo" href="../../index.html"> 
+              <span>Gastro</span>
+              <svg class="header__nav--link-logo-icon">
+                 <use href="../../images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+              <span>Guide</span>
+            </a>
+
+            <ul class="nav__list">
+                <li class="nav__list--item">
+                    <a href="../../index.html" class="nav__list--link ">Головна</a>
+                </li>
+                <li class="nav__list--item dropdown">
+                    <a href="../continents/index.html" class="nav__list--link dropbtn current">Континенти</a>
+                    <ul class="dropdown-content">
+                      <li class="dropdown-content__item"><a href="#" class="dropdown-content__link">Австралія</a></li>
+                      <li class="dropdown-content__item"><a href="#" class="dropdown-content__link ">Азія</a></li>
+                      <li class="dropdown-content__item"><a href="#" class="dropdown-content__link ">Африка</a></li>
+                       <li class="dropdown-content__item"><a href="#" class="dropdown-content__link ">Европа</a></li>
+                       <li class="dropdown-content__item"><a href="#" class="dropdown-content__link ">Південна Америка</a></li>
+                       <li class="dropdown-content__item"><a href="#" class="dropdown-content__link current-dropdown">Північна Америка</a></li>
+                    </ul>
+                </li>
+                <li class="nav__list--item">
+                    <a href="../countries/index.html" class="nav__list--link">Країни</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="../products/index.html" class="nav__list--link">Страви</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="../products/index.html" class="nav__list--link">Продукти</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="../manual/index.html" class="nav__list--link">Довідник</a>
+                </li>
+            </ul>
+            <!--Open Mobile menu button-->
+            <button class="header__nav--button-menu js-open-btn">
+                <svg class="header__nav--button-menu-icon">
+                    <use href="../../images/symbol-defs.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
+        </nav>
+    </div>
+    </div>
+     <!--Mobile menu-->
+        <div class="mobile-menu js-mobile-menu">
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__btn-close js-close-btn">
+                    <svg class="mobile-menu__btn-close--icon">
+                        <use href="../../images/symbol-defs.svg#icon-cancel"></use>
+                    </svg>
+                </button>
+
+              <div>
+
+                <ul class="mobile-menu__nav--list">
+                <li class="mobile-menu__nav--list-item"><a href="../../index.html" class="mobile-menu__nav--list-link ">Головна</a></li>
+                <li class="mobile-menu__nav--list-item"><a href="../continents/index.html" class="mobile-menu__nav--list-link current">Континенти</a></li>
+                <li class="mobile-menu__nav--list-item"><a href="../countries/index.html" class="mobile-menu__nav--list-link">Країни</a></li>
+                <li class="mobile-menu__nav--list-item"><a href="../products/index.html" class="mobile-menu__nav--list-link">Продукти</a></li>
+                <li class="mobile-menu__nav--list-item"><a href="../manual/index.html" class="mobile-menu__nav--list-link">Довідник</a></li>
+               </ul>
+
+               <ul class="mobile-menu__nav--list">
+                <li class="mobile-menu__nav--list-item"><a href="../../index.html#recource" class="mobile-menu__nav--list-link js-link">Про ресурс</a></li>
+                <li class="mobile-menu__nav--list-item"><a href="../../index.html#author" class="mobile-menu__nav--list-link js-link">Про атвора</a></li>
+                <li class="mobile-menu__nav--list-item"><a href="../../index.html#contacts" class="mobile-menu__nav--list-link js-link">Контакти</a></li>
+               </ul>
+
+               <h3 class="mobile-menu--contacts-title">Зворотній звʼязок</h3>
+               <ul class="mobile-menu__contacts--list">
+                <li class="mobile-menu__contacts--item-mail">
+                    <svg class="mobile-menu__contacts--icon">
+                        <use href="../../images/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    <a class="mobile-menu__contacts--link-mail" href="mailto:gastroguide@ukr.net">gastroguide@ukr.net</a>
+                </li>
+                <div class="mobile-menu__contacts--container">
+                <li class="mobile-menu__contacts--item">
+                    <a class="mobile-menu__contacts--link-social" href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ==">
+                    <svg class="mobile-menu__contacts--icon-social mobile-menu__contacts--icon">
+                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                    </svg>
+                </a></li>
+                <li class="mobile-menu__contacts--item">
+                    <a class="mobile-menu__contacts--link-social" href="#">
+                    <svg class="mobile-menu__contacts--icon-social mobile-menu__contacts--icon">
+                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                    </svg>
+                </a></li>
+                </div>
+               </ul>
+              </div>
+            </div>
+        </div>
+    </header>
+    <!--Main content-->
+    <main>
+          <!--Hero section-->
+        <section class="hero-continent">
+            <div class="hero-continent__container hero-continent__container-NA">
+                <h1 class="continent__title-left continent__title">Кухня та традиції континенту
+                    <span class="continent__title-left--uppercase continent__title--uppercase">Північна <br> Америка</span>
+                </h1>
+            </div>
+        </section>
+    
+        <!--Features section-->
+        <section class="section">
+        <div class="container features-continent__container">
+            <h2 class="section__title">Особливості континента</h2>
+            
+            <div class="features-continent__style--container">
+                  <p class="features-continent__text">Різноманітність культури харчування Північної Америки пов'язана не лише з історією та національними особливостями континенту, а й з великою кількістю мігрантів з усього світу, які внесли багатогранність харчових традицій у всіх країнах материка.</p>
+            <ul class="features-continent__list">
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Північна Америка відома своєю любов'ю до фастфуду. Хот-доги та гамбургери є символами американської культури. Велика кількість відомих міжнародних фастфуд-ланцюжків, таких як McDonald's та Burger King, мають своє коріння саме тут.
+                        Ця пристрасть до швидкого харчування справила значний вплив на харчову культуру регіону, відображаючи споживчі звички та сучасні тенденції. Фастфуд виріс звідси в глобальний феномен, пропонуючи смаки Америки на кожному куточку планети і ставши невід'ємною частиною світової кулінарної спадщини.</p>
+                    <picture>
+                        <source srcset="../../images/continents-page/fast-food-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/continents-page/fast-food-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/continents-page/fast-food-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/continents-page/fast-food-na-mob.jpg" alt="Фаст фуд - американська популярна їжа" class="features-continent__img">
+                    </picture>
+                    
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA"> BBQ (барбекю) є важливою частиною культури харчування у Північній Америці, особливо відзначаючи себе у Південних штатах. Ця кулінарна традиція є справжньою страстю для багатьох американців, а відомі різноманітні стилі барбекю, такі як техаський з великими кусками м'яса, каролінський з особливим соусом та мемфіський з використанням свинини. Ця традиція не тільки об'єднує сім'ї та друзів під час гастрономічних заходів, але і відображає багатогранність американського смаку та вміння вдосконалювати рецепти на протязі поколінь.</p>
+                    <picture>
+                        <source srcset="../../images/continents-page/barbecue-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/continents-page/barbecue-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/continents-page/barbecue-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/continents-page/barbecue-na-mob.jpg" alt="Барбекю - кулінарні традиції Америки та Канади" class="features-continent__img">
+                    </picture>
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Північна Америка також славиться своєю автентичною мексиканською кухнею, яка є однією з найпопулярніших кухонь на континенті. Мексиканська кухня вражає своєю різноманітністю та використанням характерних інгредієнтів, таких як смачне авокадо, ароматні чилі, сочні томати, традиційна кукурудза, білокачанна сочевиця. Такі страви, як традиційні тако, апетитні фахітас, соковите гуакамоле та пікантна сальса, вражають своїм смаком та корінням у мексиканській культурі, надаючи їм популярності та особливого місця в кулінарному прояві регіону.</p>
+                    <picture>
+                        <source srcset="../../images/continents-page/tacos-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/continents-page/tacos-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/continents-page/tacos-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/continents-page/tacos-na-mob.jpg" alt="Мексиканські такос - традиційна страви Мексики" class="features-continent__img">
+                    </picture>
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Північна Америка славиться своєю багатоманітністю в сфері харчування, і на континенті часто проводяться різноманітні багатонаціональні фестивалі їжі, присвячені різним кухням та традиціям. Ці фестивалі надають чудову можливість скуштувати різноманітні страви та насолодитися культурним розмаїттям через присутність їжі. Завдяки цьому на континенті можна знайти ресторани та кафе, що пропонують кухні з усього світу. Від смачних італійських піц до вишуканих французьких страв, від пахучої азіатської кухні до корінних смаків африканських страв — у вас є можливість насолодитися справжніми смаками різних культур.</p>
+                     <picture>
+                        <source srcset="../../images/continents-page/food-festival-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/continents-page/food-festival-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/continents-page/food-festival-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/continents-page/food-festival-na-mob.jpg" alt="Фестивалі їжі по всьому світу" class="features-continent__img">
+                    </picture>
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Північна Америка славиться популярністю газованих напоїв, таких як кола та лимонад, а також різноманітних безалкогольних напоїв, таких як кава та чай. Зокрема, цей континент є домом для розквітаючої крафтової пивоварної промисловості, особливо в США та Канаді, де функціонує величезна кількість незалежних пивоварень. Ці пивоварні пропонують багатий асортимент різних сортів пива, включаючи екзотичні і експериментальні варіанти, що відображають багатогранність смаків та інноваційний підхід до пивоваріння.</p>
+                     <picture>
+                        <source srcset="../../images/continents-page/drinks-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/continents-page/drinks-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/continents-page/drinks-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/continents-page/drinks-na-mob.jpg" alt="Традиційні напої північної америки" class="features-continent__img">
+                    </picture>
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">У США та Канаді сніданок вважається надзвичайно важливим прийомом їжі, і йому приділяється особлива увага та значення. Тут традиційно подають страви, які включають яєчню, бекон, пластівці, тості та пончики. Ще однією характерною особливістю є розміри порцій у ресторанах Північної Америки, які часто вражають своїми гігантськими порціями. Це відображає традицію "дедалі більше і краще". Тож, відвідуючи такі заклади, будьте готові ділити страви зі спільними приятелями або просити запакувати залишки для подальшого вживання.</p>
+                     <picture>
+                        <source srcset="../../images/continents-page/breakfast-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/continents-page/breakfast-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/continents-page/breakfast-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/continents-page/breakfast-na-mob.jpg" alt="Важливий традиційний сніданок північної америки, США, Канади." class="features-continent__img">
+                    </picture>
+                </li>
+            </ul>
+            </div>
+          
+            <div class="features-continent__style--container">
+            <p class="features-continent__text">Регіон має багату спадщину та різноманітність продуктів харчування, які справили значний вплив на кулінарні традиції як усередині, так і за межами континенту.</p>
+            <ul class="features-continent__list">
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Гарбуз зародився та культивувався тисячоліттями на території Північної Америки, він є важливою частиною історії цього регіону. Вона має особливе значення у культурі та традиціях місцевих американських племен, які використовували гарбуз не лише як їжу, але і для різноманітних релігійних та обрядових цілей. Сьогодні гарбуз широко використовується в кулінарії Північної Америки, де він став не тільки основною інгредієнтом таких популярних страв, як гарбузовий пиріг та гарбузовий суп, а й символом сезону осінніх свят, таких як День подяки та Хелловін.</p>
+                       <picture>
+                        <source srcset="../../images/north-america/pumpkin-na-desktop.webp"
+                                        type="image/webp"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/north-america/pumpkin-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/north-america/pumpkin-na-tablet.webp"
+                                        type="image/webp"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/north-america/pumpkin-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                       <source srcset="../../images/north-america/pumpkin-na-mob.webp"
+                                        type="image/webp"
+                                        media="(max-width:767px)"/>
+                        <source srcset="../../images/north-america/pumpkin-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/north-america/pumpkin-na-mob.jpg" alt="Гарбуз - популярний декор на свято Хєллоувин та смачний плод, який росте на американській землі." class="features-continent__img">
+                    </picture>
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Різні сорти квасолі, такі як чорна квасоля, червона квасоля і навахо, також мають глибокі корені в історії Північної Америки. Квасоля була не тільки основним джерелом їжі для місцевих американських племен, але й займала важливе місце у кулінарії, додавши багато смакових нюансів до мексиканської та південноамериканської кухні. Цільове використання квасолі в різних стравах надало їй культурне значення та підкреслило її важливість у харчовій спадщині континенту.</p>
+                    <picture>
+                        <source srcset="../../images/north-america/beans-na-desktop.webp"
+                                        type="image/webp"
+                                        media="(min-width:1200px)"/>
+                        <source srcset="../../images/north-america/beans-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1200px)"/>
+                        <source srcset="../../images/north-america/beans-na-tablet.webp"
+                                        type="image/webp"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/north-america/beans-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                       <source srcset="../../images/north-america/beans-na-mob.webp"
+                                        type="image/webp"
+                                        media="(max-width:767px)"/>
+                        <source srcset="../../images/north-america/beans-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/north-america/beans-na-mob.jpg" alt="Різні сорти квасолі, які виращуються на північній америці." class="features-continent__img">
+                    </picture>
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Журавлина, також відома як журавлина болотяна, є рослиною, з якою пов'язана довга історія на території Північної Америки. Вона має глибокі корені в використанні місцевими американськими племенами, які вже століттями знаходили способи використання цієї рослини в їжі, медицині та ритуалах. Сьогодні журавлина широко використовується у кулінарії, додаючи свої унікальні смакові властивості до різних страв, включаючи соуси, напої та десерти.</p>
+                      <picture>
+                        <source srcset="../../images/north-america/cranberry-na-desktop.webp"
+                                        type="image/webp"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/north-america/cranberry-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/north-america/cranberry-na-tablet.webp"
+                                        type="image/webp"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/north-america/cranberry-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                       <source srcset="../../images/north-america/cranberry-na-mob.webp"
+                                        type="image/webp"
+                                        media="(max-width:767px)"/>
+                        <source srcset="../../images/north-america/cranberry-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/north-america/cranberry-na-mob.jpg" alt="Журавлина(клюква) - традиційні ягоди на північній Америці." class="features-continent__img">
+                      </picture>
+                </li>
+                <li class="features-continent__item">
+                    <p class="features-continent__paragraph-NA">Кукурудза (майс) має своє коріння в Мексиці та Центральній Америці, де вона була культивована протягом тисячоліть. З часом кукурудза стала одним з найважливіших продуктів харчування в Північній Америці, а її використання розповсюдилось у різних формах, таких як цілісні зерна, кукурудзяне борошно та кукурудзяні пластівці, які завоювали популярність завдяки своєму смаку та варіативності в приготуванні.</p>
+                      <picture>
+                        <source srcset="../../images/north-america/corn-na-desktop.webp"
+                                        type="image/webp"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/north-america/corn-na-desktop.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:1000px)"/>
+                        <source srcset="../../images/north-america/corn-na-tablet.webp"
+                                        type="image/webp"
+                                        media="(min-width:768px)"/>
+                        <source srcset="../../images/north-america/corn-na-tablet.jpg"
+                                        type="image/jpeg"
+                                        media="(min-width:768px)"/>
+                       <source srcset="../../images/north-america/corn-na-mob.webp"
+                                        type="image/webp"
+                                        media="(max-width:767px)"/>
+                        <source srcset="../../images/north-america/corn-na-mob.jpg"
+                                        type="image/jpeg"
+                                        media="(max-width:767px)"/>
+                        <img src="../../images/north-america/corn-na-mob.jpg" alt="Кукурудза - коріна рослина континента північна Америка" class="features-continent__img">
+                    </picture>
+                </li>
+            </ul>
+            </div>
+
+        </div>
+    </section>
+
+     <!--Countries of continent-->
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">Країни континента</h2>
+            <div id="country-list-na"></div> 
+    
+        </div>
+    </section>
+
+         <!--Contacts-->
+    <section class="section contacts">
+        <div class="container contacts__container">
+            <h2 class="section__title">Контактна інформація</h2>
+            <ul class="contacts__list">
+                <li class="contacts__list--item">
+                    <ul class="contacts-social__list">
+                       <li class="contacts-social__item">
+                        <h3 class="contacts-social__title">Соціальні мережі</h3>
+                        <ul class="social-links__list">
+                            <li class="social-links__item">
+                                <a href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ==" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                       <li class="contacts-social__item">
+                        <h3 class="contacts-social__title">Соціальні мережі автора</h3>
+                        <ul class="social-links__list">
+                            <li class="social-links__item">
+                                <a href="https://instagram.com/liza_gotovit?igshid=NTc4MTIwNjQ2YQ==" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="https://www.facebook.com/elizabethsheremet" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="https://www.youtube.com/@user-oq6eh1kn3u" class="social-links__link" target="_blank">
+                                    <svg class="social-links__link--icon">
+                                        <use href="../../images/symbol-defs.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+
+                <li class="contacts__list--item">
+                    <h3 class="contacts__title--mail">Зворотній звʼязок</h3>
+                    <a class="contacts__link--mail" href="mailto:gastroguide@ukr.net">
+                        <svg class="contacts__link--mail-icon">
+                            <use href="../../images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        gastroguide@ukr.net</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="bg__container">
+            <div class="container footer__container">
+                <div class="footer__nav--container">
+                    <h3 class="footer__title">Навігація по сайту</h3>
+                    <ul class="footer__nav--list">
+                        <li class="footer__nav--item">
+                            <a href="../index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-home"></use>
+                                </svg>Головна</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../continents/index.html" class="footer__nav--link"><svg
+                                    class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-continents"></use>
+                                </svg>Континенти</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../countries/index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-country"></use>
+                                </svg>Країни</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="./index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-products"></use>
+                                </svg>Продукти</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../manual/index.html" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-manual"></use>
+                                </svg>Довідник</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../index.html#contacts" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-contacts"></use>
+                                </svg>Контакти</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../index.html#recource" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-about"></use>
+                                </svg>Про ресурс</a>
+                        </li>
+                        <li class="footer__nav--item">
+                            <a href="../index.html#author" class="footer__nav--link"><svg class="footer__nav--link-icon">
+                                    <use href="../../images/symbol-defs.svg#icon-author"></use>
+                                </svg>Про автора</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__contscts--style-box">
+                    <div class="footer__contacts--container">
+                        <h3 class="footer__title">Зворотній звʼязок</h3>
+                        <ul class="footer__contacts--list">
+                            <li><a href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ=="
+                                    class="footer__contacts--link"><svg class="footer__contacts--link-icon" target="_blank">
+                                        <use href="../../images/symbol-defs.svg#icon-insta"></use>
+                                    </svg></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100095173823392"
+                                    class="footer__contacts--link"><svg class="footer__contacts--link-icon" target="_blank">
+                                        <use href="../../images/symbol-defs.svg#icon-fb"></use>
+                                    </svg></a></li>
+                            <li><a href="mailto:gastroguide@ukr.net" class="footer__contacts--link" target="_blank"><svg
+                                        class="footer__contacts--link-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-mail"></use>
+                                    </svg>gastroguide@ukr.net</a></li>
+                        </ul>
+                    </div>
+    
+                    <a class="header__nav--link-logo footer__logo" href="../index.html">
+                        <span>Gastro</span>
+                        <svg class="header__nav--link-logo-icon">
+                            <use href="../../images/symbol-defs.svg#icon-logo"></use>
+                        </svg>
+                        <span>Guide</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

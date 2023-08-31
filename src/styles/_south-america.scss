@@ -1,197 +1,315 @@
-.hero-sa{
+.hero-continent{
     padding: 0;
 }
-.hero-sa__container{
+.hero-continent__container{
         padding: 0;
-        height: 290px;
-        background-image: linear-gradient(to right,
+        width: 100%;
+        height: auto;
+        
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+}
+.hero-continent__container-SA{
+       background-image: linear-gradient(to right,
             rgba(0, 21, 52, 0.3),
             rgba(0, 21, 52, 0.3)),
-            url('images/continents-page/hero-sa-mob.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 290px;
+        url('images/continents-page/hero-sa-mob.jpg');
+}
+.hero-continent__container-NA{
+    background-image: linear-gradient(to right,
+            rgba(0, 21, 52, 0.3),
+            rgba(0, 21, 52, 0.3)),
+        url('images/continents-page/hero-na-mob.jpg');
+}
+.continent__title{
+    padding-top: 110px;
+    padding-bottom: 110px;
+    font-size: 14px;
+    font-family: var(--font-family-titles);
+    color: var(--color-continents-title);
 }
 .continent__title-right{
-    padding-top: 100px;
-    color: hsla(58, 100%, 50%, 0.75);
-    text-align: end;
-    font-size: 15px;
     margin-right: 20px;
+    text-align: end;
 }
-.continent__title-right--uppercase {
+.continent__title-left{
+    text-align: start;
+    margin-left: 20px;
+}
+.continent__title--uppercase {
     display: block;
     text-transform: uppercase;
-    margin-top: 10px;
-    margin-right: 23px;
-    font-size: 26px;
+    margin-top: 12px;
+    font-size: 28px;
     color: var(--color-hover-text);
 }
-
-.features__text{
-    margin-top: 20px;
+.continent__title-left--uppercase {
+    margin-left: 10px;
+}
+.continent__title-right--uppercase {
+    margin-right: 10px;
 }
 
-.features__locations--list{
+
+.features-continent__list{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-
+    gap: 10px;
     margin-top: 15px;
-   
 }
 
-.features__location--image {
+.features-continent__img {
      width: 100%;
      margin-top: 10px;
      border-radius: 25px;
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
 
  }
 
- .features__locations--item {
+ .features-continent__style--container{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--background-color-primary);
+    border-radius: 25px;
+    backdrop-filter: blur(2.2px);
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
+    
+ }
+
+ .features-continent__text {
+    font-family: 'MontserratMedium', sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+ }
+
+ .features-continent__item {
     position: relative;
- }
-
- .features__locations--text{
-        
-        padding-left: 26px;
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 3px;
-            left: 0;
-            width: 20px;
-            height: 40px;
-            background-size: cover;
-            background-image: url("images/continents-page/chilie-icon.svg");
+    border-radius: 25px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+        &:hover,
+        &:focus {
+            box-shadow: 3px 3px 5px 0px var(--color-shadow);
+            
+            color: var(--color-hover-current-link);
+            transform: scale(1.02);
         }
-
+    
  }
+.features-continent__paragraph-SA {
+    padding-left: 26px;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 40px;
+        background-size: cover;
+        background-image: url("images/continents-page/chilie-icon.svg");
+    }
+ }
+
+.features-continent__paragraph-NA {
+    padding-left: 26px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 35%;
+        left: 8px;
+        width: 20px;
+        height: 40px;
+        background-size: cover;
+        background-image: url("images/continents-page/corn-icon.svg");
+    }
+}
 
 @media screen and (min-width:768px) {
-    .features__text {
-            margin-top: 30px;
-    }
-    .hero-sa__container {
-            width: 100%;
-            height: 450px;
-            background-image: linear-gradient(to right,
+
+    .hero-continent__container-SA {
+        background-image: linear-gradient(to right,
                     rgba(0, 21, 52, 0.3),
                     rgba(0, 21, 52, 0.3)),
                 url('images/continents-page/hero-sa-tablet.jpg');
-            background-size: 100% 450px;
     }
-        .continent__title-right {
-            font-family: var(--font-family-titles);
-            padding-top: 155px;
-            font-size: 28px;
-            margin-right: 28px;
-        }
     
-        .continent__title-right--uppercase {
-            margin-top: 20px;
-            margin-right: 23px;
-            font-size: 50px;
-        }
+    .hero-continent__container-NA {
+        background-image: linear-gradient(to right,
+                    rgba(0, 21, 52, 0.3),
+                    rgba(0, 21, 52, 0.3)),
+                url('images/continents-page/hero-na-tablet.jpg');
+    }
 
-        .features__locations--item{
+  
+
+    .continent__title{
+        padding-top: 145px;
+        padding-bottom: 145px;
+        font-size: 26px;      
+    }
+    .continent__title-right {
+        margin-right: 45px;
+    }
+    .continent__title-left{
+        margin-left: 45px;
+    }
+    
+    .continent__title--uppercase {
+        margin-top: 20px;
+        font-size: 48px;
+    }
+
+    .continent__title-right--uppercase{
+        margin-right: 23px;
+    }
+    .continent__title-left--uppercase {
+        margin-left: 23px;
+    }
+
+    .features-continent__item{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             line-height: 1.1;
         }
 
-       .features__location--image {
+       .features-continent__img {
                     width: 160px;
                     height: 171px;
                     object-fit: cover;
                     margin-top: 0;
         
         }
-
+          .features-continent__paragraph-NA {
+              width: 499px;
+          }
+    .features-continent__style--container{
+        padding: 15px;
+        margin-top: 25px;
+    }
 
 }
 
 @media screen and (min-width:1000px) {
-    .features__text {
-            margin-top: 35px;
-        }
-    .hero-sa__container {
-        height: 570px;
-        background-size: 100% 570px;
-    }
 
-    .continent__title-right {
+    .continent__title {
         padding-top: 200px;
+        padding-bottom: 200px;
         font-size: 36px;
+        
+    }
+    .continent__title-right{
         margin-right: 50px;
     }
-
-    .continent__title-right--uppercase {
-        margin-top: 25px;
-        margin-right: 35px;
-        font-size: 58px;
+    .continent__title-left {
+        margin-left: 50px;
     }
 
+    .continent__title--uppercase {
+        margin-top: 25px;
+        font-size: 60px;
+    }
+    .continent__title-right--uppercase{
+        margin-right: 55px;
+    }
+    .continent__title-left--uppercase {
+             margin-left: 55px;
+    }
     
-           .features__location--image {
-               width: 230px;
-               height: 150px;
+    .features-continent__img {
+        width: 230px;
+        height: 150px;
     
-           }
-
+    }
+    .features-continent__paragraph-NA {
+             width: 649px;
+}
 
 }
 
 @media screen and (min-width:1200px) {
-    .features__text {
-            margin-top: 40px;
-        }
-    .hero-sa__container {
-        height: 750px;
-        background-image: linear-gradient(to right,
-                rgba(0, 21, 52, 0.3),
-                rgba(0, 21, 52, 0.3)),
-            url('images/continents-page/hero-sa-desktop.jpg');
-        background-size: 100% 750px;
-    }
 
-    .continent__title-right {
-        padding-top: 255px;
+        .hero-continent__container-SA {
+            background-image: linear-gradient(to right,
+                    rgba(0, 21, 52, 0.3),
+                    rgba(0, 21, 52, 0.3)),
+                url('images/continents-page/hero-sa-desktop.jpg');
+        }
+    
+        .hero-continent__container-NA {
+            background-image: linear-gradient(to right,
+                    rgba(0, 21, 52, 0.3),
+                    rgba(0, 21, 52, 0.3)),
+                url('images/continents-page/hero-na-desktop.jpg');
+        }
+
+    .continent__title {
+        padding-top: 265px;
+        padding-bottom: 265px;
         font-size: 44px;
+        
+    }
+    .continent__title-right{
         margin-right: 55px;
     }
-
-    .continent__title-right--uppercase {
-        margin-top: 30px;
-        margin-right: 45px;
-        font-size: 78px;
+    .continent__title-left {
+        margin-left: 55px;
     }
 
-                .features__location--image {
-                    width: 260px;
-                    height: 170px;
-        
-                }
+    .continent__title--uppercase {
+        margin-top: 30px;
+        font-size: 78px;
+    }
+    .continent__title-right--uppercase{
+        margin-right: 45px;
+    }
+    .continent__title-left--uppercase {
+        margin-left: 45px;
+    }
+
+    .features-continent__img {
+        width: 260px;
+        height: 170px;
+    }
+    .features-continent__paragraph-NA {
+             width: 839px;
+}
+   .features-continent__style--container {
+    padding: 20px;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width:1440px) {
-    .hero-sa__container {
-        height: 770px;
-        background-size: 100% 770px;
-    }
 
-    .continent__title-right {
+    .continent__title {
         padding-top: 265px;
+        padding-bottom: 265px;
         font-size: 50px;
-        margin-right: 65px;
+      
+    }
+    .continent__title-right{
+        margin-right: 95px;
+    }
+    .continent__title-left {
+        margin-left: 95px;
     }
 
-    .continent__title-right--uppercase {
+    .continent__title--uppercase {
         margin-top: 30px;
-        margin-right: 55px;
         font-size: 90px;
     }
+    .continent__title-right--uppercase{
+        margin-right: 60px;
+    }
+    .continent__title-left--uppercase {
+        margin-left: 60px;
+    }
 
-    
+    .features-continent__paragraph-NA {
+             width: 1059px;
+    }
 
 }

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { getCountriesOfTheSouthAmerica } from './fetch';
+import { getCountriesOfTheNorthAmerica } from './fetch';
 import CountriesListComponent from '../components/CountriesListComponent';
 
-const CountryList = () => {
+const CountryListNA = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
     async function fetchCountries() {
-      const fetchedCountries = await getCountriesOfTheSouthAmerica();
+      const fetchedCountries = await getCountriesOfTheNorthAmerica();
       const sortedCountries = fetchedCountries.sort((a, b) =>
         a.countryName.localeCompare(b.countryName)
       );
@@ -23,5 +23,5 @@ const CountryList = () => {
   );
 };
 
-const countryListRoot = createRoot(document.getElementById('country-list'));
-countryListRoot.render(<CountryList/>)
+const countryListNARoot = createRoot(document.getElementById('country-list-na'));
+countryListNARoot.render(<CountryListNA/>)
